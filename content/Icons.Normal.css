@@ -112,6 +112,9 @@ menulist>menupopup>menuitem[label]:not(.searchbar-engine-menuitem)>.menu-iconic-
 /*menu margin*/
 menupopup menu>.menu-iconic-left>image,
 menuitem>.menu-iconic-left>image{margin-right:2px!important}
+/*fix margin added from -moz-appearance:menuimage + panel UI*/
+#BMB_bookmarksPopup menuitem>.menu-iconic-left,
+#BMB_bookmarksPopup menu>.menu-iconic-left{margin-top:0!important;margin-bottom:0!important}
 
 /*Fixes to allow icons where they shouldn't be / Other fixes*/
 
