@@ -5,8 +5,10 @@ mosaic.png
 
 
 /*code from CuteMenus SVG*/
-splitmenu>.splitmenu-menuitem,menuitem[id]:not([checked]):not([type="checkbox"]):not(.searchbar-engine-menuitem),menuitem[label]:not([checked]):not([type="checkbox"]):not(.searchbar-engine-menuitem){-moz-binding:url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important}
-[id*="appmenu"]>menu[label],menupopup>menu[label]:not(.split-menuitem-menu),popup>menu[label]:not(.split-menuitem-menu){-moz-binding:url("chrome://global/content/bindings/menu.xml#menu-iconic")!important}
+splitmenu>.splitmenu-menuitem,menuitem[id]:not([checked]):not([type="checkbox"]):not(.searchbar-engine-menuitem),menuitem[label]:not([checked]):not([type="checkbox"]):not(.searchbar-engine-menuitem)
+{-moz-binding:url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important}
+[id*="appmenu"]>menu[label],menupopup>menu[label]:not(.split-menuitem-menu),popup>menu[label]:not(.split-menuitem-menu)
+{-moz-binding:url("chrome://global/content/bindings/menu.xml#menu-iconic")!important}
 /*code from CuteMenus SVG*/
 
 
@@ -49,7 +51,8 @@ button[label]:not([label=""])>.button-box>.box-inherit>.button-icon:not(:-moz-sy
 
 /*fix for macfox theme*/
 .radio-label{margin-left:0!important}
-radiogroup:not([preference^="sf-"]):not([preference$="-style"]).radio-label-box{list-style-image:url("mosaic.png")!important}
+radiogroup:not([preference^="sf-"]):not([preference$="-style"]).radio-label-box
+{list-style-image:url("mosaic.png")!important}
 /*fix for Easy DragToGo*/
 radio.direc-four>.radio-label-box{list-style-image:url("chrome://easydragtogo/skin/directions_rlud.png")!important}
 radio.direc-ud>.radio-label-box{list-style-image:url("chrome://easydragtogo/skin/directions_ud.png")!important}
@@ -61,15 +64,20 @@ radio.direc-none>.radio-label-box{list-style-image:url("chrome://easydragtogo/sk
 /*remove icon from menubar menu*/
 #main-menubar>#menu_Help{-moz-binding:url("chrome://global/content/bindings/menu.xml#menu-menubar")!important}
 /*rotate some images*/
-menuitem[command="cmd_findPrev"]>.menu-iconic-left>.menu-iconic-icon{transform:rotate(180deg)!important;-moz-transform:rotate(180deg)!important}
-#rotatesub-rotate-right>.menu-iconic-left>image{transform:rotate(90deg)!important;-moz-transform:rotate(90deg)!important}
-#rotatesub-rotate-left>.menu-iconic-left>image{transform:rotate(-90deg)!important;-moz-transform:rotate(-90deg)!important}
+menuitem[command="cmd_findPrev"]>.menu-iconic-left>.menu-iconic-icon
+{transform:rotate(180deg)!important;-moz-transform:rotate(180deg)!important}
+#rotatesub-rotate-right>.menu-iconic-left>image
+{transform:rotate(90deg)!important;-moz-transform:rotate(90deg)!important}
+#rotatesub-rotate-left>.menu-iconic-left>image
+{transform:rotate(-90deg)!important;-moz-transform:rotate(-90deg)!important}
 /*hide perspectives label*/
-statusbarpanel#perspective-status>label{-moz-binding:url("chrome://global/content/bindings/general.xml#statusbarpanel-iconic")!important}
+statusbarpanel#perspective-status>label
+{-moz-binding:url("chrome://global/content/bindings/general.xml#statusbarpanel-iconic")!important}
 /*adblock plus: change search: text to icon*/
 #abp-sidebar>hbox>hbox>label[control="searchField"],
 /*for html validator help*/
-#tidy-toolbar>toolbar>label[control="tidy-explain-error-label"]{-moz-binding:url(chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton)!important}
+#tidy-toolbar>toolbar>label[control="tidy-explain-error-label"]
+{-moz-binding:url(chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton)!important}
 /*resize options window to fit the icons in*/
 #prefDialog{height:43em!important;width:55em!important}
 #MailPreferences,#BrowserPreferences{height:41em!important;width:47em!important}
@@ -78,10 +86,13 @@ statusbarpanel#perspective-status>label{-moz-binding:url("chrome://global/conten
 /*download dialog/change filetype dialog*/
 #contentTypeImage,#typeIcon{width:16px!important;height:16px!important}
 /*fix for Bookmark Rater*/
-menuitem[imagetype="image/svg+xml"][alignment="left"][label]:not(.searchbar-engine-menuitem){-moz-binding:url("chrome://bookmarkrater/content/menuitem-rater.xml#menuitem-iconic-svg-left")!important}
-menuitem[imagetype="image/svg+xml"][alignment="right"][label]:not(.searchbar-engine-menuitem){-moz-binding:url("chrome://bookmarkrater/content/menuitem-rater.xml#menuitem-iconic-svg-right")!important}
+menuitem[imagetype="image/svg+xml"][alignment="left"][label]:not(.searchbar-engine-menuitem)
+{-moz-binding:url("chrome://bookmarkrater/content/menuitem-rater.xml#menuitem-iconic-svg-left")!important}
+menuitem[imagetype="image/svg+xml"][alignment="right"][label]:not(.searchbar-engine-menuitem)
+{-moz-binding:url("chrome://bookmarkrater/content/menuitem-rater.xml#menuitem-iconic-svg-right")!important}
 /*fix for QuickFox Notes menu colours*/
-#editor-tabbox-toolbar-menu6-radiogroup>menuitem,#editor-tabbox-toolbar-menu4-radiogroup>menuitem{-moz-appearance:none!important}
+#editor-tabbox-toolbar-menu6-radiogroup>menuitem,#editor-tabbox-toolbar-menu4-radiogroup>menuitem
+{-moz-appearance:none!important}
 /*remove grayscale from gm editor toolbarbutton images*/
 #sp-toolbar>toolbarbutton>image{filter:none!important}
 
@@ -101,7 +112,8 @@ popup>menu[label]>.menu-iconic-left,
 #appmenuSecondaryPane>splitmenu>.splitmenu-menuitem>.menu-iconic-left
 {-moz-appearance:menuimage!important;padding-top:0!important;display:-moz-box!important}
 /*unfix menulist menuitems*/
-menulist>menupopup>menuitem[label]:not(.searchbar-engine-menuitem)>.menu-iconic-left{display:none!important}
+menulist>menupopup>menuitem[label]:not(.searchbar-engine-menuitem)>.menu-iconic-left
+{display:none!important}
 #appmenuPrimaryPane>menuitem>.menu-iconic-left>.menu-iconic-icon,
 #appmenuPrimaryPane>menu>.menu-iconic-left>.menu-iconic-icon,
 #appmenuPrimaryPane>splitmenu>.splitmenu-menuitem>.menu-iconic-left>.menu-iconic-icon,
@@ -114,14 +126,16 @@ menupopup menu>.menu-iconic-left>image,
 menuitem>.menu-iconic-left>image{margin-right:2px!important}
 /*fix margin added from -moz-appearance:menuimage + panel UI*/
 #BMB_bookmarksPopup menuitem>.menu-iconic-left,
-#BMB_bookmarksPopup menu>.menu-iconic-left{margin-top:0!important;margin-bottom:0!important}
+#BMB_bookmarksPopup menu>.menu-iconic-left
+{margin-top:0!important;margin-bottom:0!important}
 
 /*Fixes to allow icons where they shouldn't be / Other fixes*/
 
 /*hide dotted outline*/
 *:focus{outline:0!important}
 /*pad out icon for buttons with a menu (tabmix*/
-#TabMIxPreferences>.prefWindow-dlgbuttons>.dialog-button[popup="tm-settings"]>.button-box>.button-icon{padding-left:2pt!important}
+#TabMIxPreferences>.prefWindow-dlgbuttons>.dialog-button[popup="tm-settings"]>.button-box>.button-icon
+{padding-left:2pt!important}
 /*pad out icon for buttons with a menu*/
 button[type="menu"]>.box-inherit.button-box>.box-inherit>.button-icon,
 /*tab icon padding*/
@@ -143,9 +157,12 @@ treechildren:-moz-tree-twisty{width:auto!important;height:auto!important}
 button:not([wsprotype])>.button-box>.button-icon{padding-right:2pt!important}
 /*fixing some issues with PanelUI items*/
 menuitem[checked="true"].subviewbutton>.menu-iconic-left{visibility:visible!important}
-menuitem[type="checkbox"]>.menu-iconic-left>.menu-iconic-icon,menuitem[checked]:not([type="radio"])>.menu-iconic-left>.menu-iconic-icon{display:-moz-box!important}
+menuitem[type="checkbox"]>.menu-iconic-left>.menu-iconic-icon,menuitem[checked]:not([type="radio"])>.menu-iconic-left>.menu-iconic-icon
+{display:-moz-box!important}
 .subviewbutton[type="checkbox"]{background:none!important}
-
+/*resize customize buttons*/
+#customization-reset-button>.button-box>.button-icon,#customization-toolbar-visibility-button>.button-box>hbox>.button-icon
+{height:16px!important}
 
 
 /*folder*/
@@ -203,7 +220,7 @@ button[label="OK"][disabled="true"],button#allow[disabled="true"],button[dlgtype
 #install-shortcut #icon_file:not([checked]),#install-shortcut #icon_favicon:not([checked]),#highlight[disabled="true"],#highlight,#cookiesChildren:-moz-tree-image(domainCol,container)
 {-moz-image-region:rect(304px 64px 320px 48px)!important;list-style-image:url("mosaic.png")!important}
 /*undo*/
-[id$="_undoCloseTab"][customicon]:not(#alltabs_undoCloseTab),#undoCloseTab_tabMenu,#undoCloseTab_mainContentMenu,#HMB_historyUndoMenu,#enigmail_undo_encryption,#undoButton,toolbarbutton[oncommand$="undoCloseWindow();"],#spell-undo-add-to-dictionary,[id$="_undo"],[id$="open_recent-menu"],[id$="editmenu-undo"],#sp-menu-undo,#se-menu-undo,#MinTrayR_restore,#calendar-undo-menu,#Undo,#yarip-undo-menupopup>menuitem,#yarip-undo-menu,#rotatesub-rotate-right,#rotatesub-rotate-left,button[oncommand$=".unmap()"],#Bottom_UndoLastSave,#autocopy-context-menu-undocopy,#UndoLastSave,button[id$="-UndoLastSave"],[id$="_UndoLastSave"],[id$="_rip-undolast"],button.extension-install-button,menuitem[cmd="cmd_undo"],#mnEditUndo,menuitem[command="cmd_undo"],menuitem[id$=":cmd-undo"],button[label="Undo"],#editBookmarkPanelUndoRemoveButton,#historyUndoMenu
+menu[label="Undo Close Tab"],[id$="_undoCloseTab"][customicon]:not(#alltabs_undoCloseTab),#undoCloseTab_tabMenu,#undoCloseTab_mainContentMenu,#HMB_historyUndoMenu,#enigmail_undo_encryption,#undoButton,toolbarbutton[oncommand$="undoCloseWindow();"],#spell-undo-add-to-dictionary,[id$="_undo"],[id$="open_recent-menu"],[id$="editmenu-undo"],#sp-menu-undo,#se-menu-undo,#MinTrayR_restore,#calendar-undo-menu,#Undo,#yarip-undo-menupopup>menuitem,#yarip-undo-menu,#rotatesub-rotate-right,#rotatesub-rotate-left,button[oncommand$=".unmap()"],#Bottom_UndoLastSave,#autocopy-context-menu-undocopy,#UndoLastSave,button[id$="-UndoLastSave"],[id$="_UndoLastSave"],[id$="_rip-undolast"],button.extension-install-button,menuitem[cmd="cmd_undo"],#mnEditUndo,menuitem[command="cmd_undo"],menuitem[id$=":cmd-undo"],button[label="Undo"],#editBookmarkPanelUndoRemoveButton,#historyUndoMenu
 {-moz-image-region:rect(64px 16px 80px 0)!important;list-style-image:url("mosaic.png")!important}
 /*undo disabled*/
 #HMB_historyUndoWindowMenu,menuitem[cmd="cmd_undo"][disabled="true"],#undoButton[disabled="true"],#spell-undo-add-to-dictionary[disabled="true"],[id$="_undo"][disabled="true"],[id$="open_recent-menu"][disabled="true"],[id$="_recentWindows"][disabled="true"],#MinTrayR_restore-all,#calendar-undo-menu[disabled="true"],menuitem[cmd="cmd_redo"][disabled="true"]>.menu-iconic-left>.menu-iconic-icon,menuitem[cmd="cmd_undo"][disabled="true"]>.menu-iconic-left>.menu-iconic-icon,[id$="recentlyClosedWindowsMenu"],#yarip-undo-menupopup>menuitem[oncommand^="yaripOverlay.undoAll"],[id$="-recentlyClosedTabs"]:not(#PanelUI-recentlyClosedTabs),[id$="_recentlyClosedTabs"],#Bottom_UndoAllSaves,#UndoAllSaves,button[id$="-UndoAllSaves"],[id$="_UndoAllSaves"],menuitem[oncommand$=".doUndoAll()"],#historyUndoWindowMenu,#btn-nav-first
@@ -713,7 +730,7 @@ menuitem[command="cmd_properties"],[id$="-properties"]:not(#entry-properties),[i
 menuitem[label*="Go to Line"],#goToLine,[id$="goToLine"],[id$="-devAppMgr"],[id$="_devAppMgr"],#sp-menu-gotoLine,#se-menu-gotoLine,#sbPopupSend,[oncommand*="getgspace.com/howitworks.html"],menuitem[command="cmd_goToLine"],#smartlink-menu
 {-moz-image-region:rect(256px 256px 272px 240px)!important;list-style-image:url("mosaic.png")!important}
 /*abc *font*/
-menuitem[label="Used Font Faces"],menuitem[viewerListEntry="7"][name="viewerListEntries"],[id$="charsetMenu"],#charsetMenu>menupopup>menu[accesskey="D"],#charsetPopup>menu[accesskey="D"],button[oncommand$=".open(Ci.nsIPrefBranch.PREF_STRING)"],#fontStyleMenu,#editor-tabbox-toolbar-menu6,button[oncommand$=".attachmentReminderOptionsDialog();"],menu[datasources="rdf:charset-menu"]>menupopup>menuitem,#encoding,button[oncommand="SQLiteManager.generateFKTriggers()"],#langpair_radiomenu [id]:not(#auto),#mailviewCharsetMenu menu[ref="NC:BrowserMoreCharsetMenuRoot"],#mailviewCharsetMenu menu[ref="NC:BrowserMoreCharsetMenuRoot"] menuitem:not(#x-user-defined),#UTF-16,#charsetMenu menu[ref="NC:BrowserMoreCharsetMenuRoot"] menuitem:not(#x-user-defined),menuitem[oncommand$=".PREF_STRING);"]
+#charsetMenu>menupopup>menu:first-child,menuitem[label="Used Font Faces"],menuitem[viewerListEntry="7"][name="viewerListEntries"],[id$="charsetMenu"],#charsetMenu>menupopup>menu[accesskey="D"],#charsetPopup>menu[accesskey="D"],button[oncommand$=".open(Ci.nsIPrefBranch.PREF_STRING)"],#fontStyleMenu,#editor-tabbox-toolbar-menu6,button[oncommand$=".attachmentReminderOptionsDialog();"],menu[datasources="rdf:charset-menu"]>menupopup>menuitem,#encoding,button[oncommand="SQLiteManager.generateFKTriggers()"],#langpair_radiomenu [id]:not(#auto),#mailviewCharsetMenu menu[ref="NC:BrowserMoreCharsetMenuRoot"],#mailviewCharsetMenu menu[ref="NC:BrowserMoreCharsetMenuRoot"] menuitem:not(#x-user-defined),#UTF-16,#charsetMenu menu[ref="NC:BrowserMoreCharsetMenuRoot"] menuitem:not(#x-user-defined),menuitem[oncommand$=".PREF_STRING);"]
 {-moz-image-region:rect(80px 256px 96px 240px)!important;list-style-image:url("mosaic.png")!important}
 /*A *font*/
 [id=":popup:fonts"],#insertChars,#fontFaceMenu,#FirebugMenu_TextSize,menuitem[oncommand="Firebug.setTextSize(0)"]
@@ -757,6 +774,9 @@ toolbarbutton[key="key_webconsole"],menuitem[oncommand="toJavaScriptConsole()"],
 /*font smaller*/
 #sp-menu-smaller-font,#fontSizeMenu,menuitem[oncommand="Firebug.increaseTextSize(-1)"],menuitem[id=":popup:fonts-popup:font-size-smaller"],menuitem[command="cmd_textZoomReduce"]
 {-moz-image-region:rect(0 160px 16px 144px)!important;list-style-image:url("mosaic.png")!important}
+/*storage *disks *discs*/
+#menuitem_storage,#menu-general-openOnConnectSqlTab,menuitem[oncommand$=".exportAll('db')"],#menu-database>menupopup>menu[observes="bc-dbOpen"]:not([id]),menuitem[oncommand$=".openDatabaseWithPath(this.label)"],menuitem[oncommand$=".UserCopyRows('sql')"],#menuitem-sqlitemanager
+{-moz-image-region:rect(352px 240px 368px 224px)!important;list-style-image:url("mosaic.png")!important}
 
 /*opera*/
 #bvpPlayIn4,#bvpViewBkMark4,#bvpView4,button[oncommand$=".open(Ci.nsIPrefBranch.PREF_INT)"],menuitem[oncommand$=".PREF_INT);"]
@@ -926,8 +946,6 @@ menuitem[oncommand$=".filterByDays();"],#folderPaneContext-markMailFolderAllRead
 {-moz-image-region:rect(160px 160px 176px 144px)!important;list-style-image:url("mosaic.png")!important}
 menuitem.customize-context-addToPanel,menuitem.customize-context-moveToPanel,radio[pane="prefpane-selection-menu"],#MenuItemsTab,#context-robocustomizeiemenu,#menueditor-options-fx,radio[pane="context-pane"],#pref-compact tab[linkedpanel="editmenu-panel"],#imagezoom-options-dialog tab[last-tab],#compact-extra-prefs,#compact-showhide-prefs
 {-moz-image-region:rect(80px 80px 96px 64px)!important;list-style-image:url("mosaic.png")!important}
-#menu-general-openOnConnectSqlTab,menuitem[oncommand$=".exportAll('db')"],#menu-database>menupopup>menu[observes="bc-dbOpen"]:not([id]),menuitem[oncommand$=".openDatabaseWithPath(this.label)"],menuitem[oncommand$=".UserCopyRows('sql')"],#menuitem-sqlitemanager
-{-moz-image-region:rect(352px 240px 368px 224px)!important;list-style-image:url("mosaic.png")!important}
 #se-dbg-cMenu-findLine,#increaseIndent,#btnIns,menuitem[oncommand="QuickFoxNotes.doKey('tab-key');"],[id$="insert-button"],#tabs-obfuscate-tab,#mnEditInsert,[id^="formfillerMenuData"],#mnEditInsertMenu,#multipletab-context-removeRightTabs-tabbrowser-content
 {-moz-image-region:rect(128px 208px 144px 192px)!important;list-style-image:url("mosaic.png")!important}
 #decreaseIndent,menuitem[oncommand="QuickFoxNotes.doKey('tab-shift-key');"],#multipletab-context-removeLeftTabs-tabbrowser-content
@@ -1222,7 +1240,8 @@ button[oncommand="SessionConverter.convertSessionSaver();"],#sessionmanager-menu
 #confmania{list-style-image:url("chrome://confmania/skin/icon.svg")!important}
 menuitem[command="openCookieEditor1"],#coomanPlus_tools_menu>menupopup>menuitem[command="openCookieEditor"],#coomanPlus_tools_menu{list-style-image:url("chrome://cookiesmanagerplus/skin/images/coomanPlus16.png")!important}
 menu[id^="ae-clippings-menu-"]{list-style-image:url("chrome://clippings/skin/images/clipping.svg")!important}
-#statusbar-options-app,#statusbar-options-fx{list-style-image:url("chrome://status4evar/skin/pms16.png")!important}
+#statusbar-options-app,#statusbar-options-fx{list-style-image:url("chrome://browser/skin/statusbar/pms16.png")!important}
+
 
 /*thunderbird stuff*/
 @-moz-document url-prefix(chrome://messenger),url-prefix(chrome://editor){
