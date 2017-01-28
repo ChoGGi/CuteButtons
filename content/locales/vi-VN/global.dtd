@@ -1,0 +1,21 @@
+<!ENTITY Options "Tùy chọn">
+<!ENTITY Enable "Cho phép">
+<!ENTITY Disable "Vô hiệu hoá">
+<!ENTITY BlurDisabled "Lờ mờ vô hiệu hóa Thực đơn mặt hàng">
+<!ENTITY Rotate "Quay">
+<!ENTITY StatusBar "Thêm vao quán ba Biểu tượng">
+<!ENTITY Icons "Biểu tượng">
+<!ENTITY Mosaic "Biểu tượng Phong cách">
+<!ENTITY MosaicTip "Thay đổi phong cách của các biểu tượng">
+<!ENTITY Brighter "Sáng hơn">
+<!ENTITY Gray "màu xám">
+<!ENTITY Menu "Thực đơn">
+<!ENTITY Button "nút">
+<!ENTITY Radio "hộp phát thanh">
+<!ENTITY Checkbox "kiểm tra hộp">
+<!ENTITY CuteButtons "dễ thương nút">
+<!ENTITY Faded "phai">
+<!ENTITY Hover "bay liệng">
+<!ENTITY Default "Mặc định">
+<!ENTITY Normal "bình thường">
+<!-- Vietnamese -->

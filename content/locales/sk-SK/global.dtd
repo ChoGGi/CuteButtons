@@ -1,0 +1,21 @@
+<!ENTITY Options "Možnosti">
+<!ENTITY Enable "Aktivovať">
+<!ENTITY Disable "Zakázať">
+<!ENTITY BlurDisabled "Blur so zdravotným postihnutím Položky ponuky">
+<!ENTITY Rotate "Otočiť">
+<!ENTITY StatusBar "Add-on Bar Ikony">
+<!ENTITY Icons "Ikony">
+<!ENTITY Mosaic "Ikon Štýl">
+<!ENTITY MosaicTip "Zmeniť štýl ikon">
+<!ENTITY Brighter "Jasnejšie">
+<!ENTITY Gray "Stupne šedej">
+<!ENTITY Menu "Ponuka">
+<!ENTITY Button "Gombík">
+<!ENTITY Radio "Rozhlasový prijímač">
+<!ENTITY Checkbox "Zaškrtávacie Políčko">
+<!ENTITY CuteButtons "RozkošnýTlačidlá">
+<!ENTITY Faded "Vyblednutý">
+<!ENTITY Hover "Vznášať sa">
+<!ENTITY Default "štandardné">
+<!ENTITY Normal "Normálne">
+<!-- Slovak -->

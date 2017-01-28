@@ -1,0 +1,21 @@
+<!ENTITY Options "Beállítások">
+<!ENTITY Enable "Engedélyezve">
+<!ENTITY Disable "Tiltva">
+<!ENTITY BlurDisabled "Letiltott ikonok elmosása">
+<!ENTITY Rotate "Forog">
+<!ENTITY StatusBar "Állapotsáv ikonok">
+<!ENTITY Icons "Ikonok">
+<!ENTITY Mosaic "Ikonstílus">
+<!ENTITY MosaicTip "Változás stílus ikonok">
+<!ENTITY Brighter "Világosabb">
+<!ENTITY Gray "Szürke">
+<!ENTITY Menu "Menü">
+<!ENTITY Button "Gomb">
+<!ENTITY Radio "Rádió">
+<!ENTITY Checkbox "jelölőnégyzetet">
+<!ENTITY CuteButtons "AranyosGombok">
+<!ENTITY Faded "Kifakult">
+<!ENTITY Hover "Lebeg">
+<!ENTITY Default "Alapértelmezett">
+<!ENTITY Normal "Normál">
+<!-- Hungarian -->

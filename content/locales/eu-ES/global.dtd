@@ -1,0 +1,21 @@
+<!ENTITY Options "Aukerak">
+<!ENTITY Enable "Gaitu">
+<!ENTITY Disable "Desgaitu">
+<!ENTITY BlurDisabled "Blur Ezinduen Menu elementuak">
+<!ENTITY Rotate "Biratu">
+<!ENTITY StatusBar "Gehigarriaren webgunea Barra Ikonoak">
+<!ENTITY Icons "Ikonoak">
+<!ENTITY Mosaic "Ikonoa Estilo">
+<!ENTITY MosaicTip "Aldatu ikonoak estiloa">
+<!ENTITY Brighter "Hobearen">
+<!ENTITY Gray "Gris">
+<!ENTITY Menu "Menu">
+<!ENTITY Button "Botoia">
+<!ENTITY Radio "Irrati">
+<!ENTITY Checkbox "Kontrol-lauki">
+<!ENTITY CuteButtons "CuteBotoia">
+<!ENTITY Faded "Desitxuratu">
+<!ENTITY Hover "Gainetik pasatzean">
+<!ENTITY Default "Default">
+<!ENTITY Normal "Ohiko">
+<!-- Basque -->

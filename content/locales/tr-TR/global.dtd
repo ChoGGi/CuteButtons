@@ -1,0 +1,21 @@
+<!ENTITY Options "Seçenekler">
+<!ENTITY Enable "Etkin">
+<!ENTITY Disable "Devre dışı">
+<!ENTITY BlurDisabled "Devre dışı simgeleri bulanıklaştır">
+<!ENTITY Rotate "Döndür">
+<!ENTITY StatusBar "Durum Çubuğu Simgeleri">
+<!ENTITY Icons "Simgeler">
+<!ENTITY Mosaic "Simge Stil">
+<!ENTITY MosaicTip "Simgeler Temayı değiştir">
+<!ENTITY Brighter "Parlak">
+<!ENTITY Gray "Gri">
+<!ENTITY Menu "Menü">
+<!ENTITY Button "Düğme">
+<!ENTITY Radio "Radyo">
+<!ENTITY Checkbox "Onay Kutusu">
+<!ENTITY CuteButtons "SevimliDüğmeler">
+<!ENTITY Faded "Soluk">
+<!ENTITY Hover "Duraksamak">
+<!ENTITY Default "Varsayılan">
+<!ENTITY Normal "Olağan">
+<!-- Turkish -->

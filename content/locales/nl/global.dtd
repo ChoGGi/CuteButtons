@@ -1,0 +1,21 @@
+<!ENTITY Options "Opties">
+<!ENTITY Enable "Inschakelen">
+<!ENTITY Disable "Uitschakelen">
+<!ENTITY BlurDisabled "Uitgeschakelde menu items onleesbaar maken">
+<!ENTITY Rotate "Draaien">
+<!ENTITY StatusBar "Statusbalk pictogrammen">
+<!ENTITY Icons "Pictogrammen">
+<!ENTITY Mosaic "Stijlicoon">
+<!ENTITY MosaicTip "Veranderen stijl van ikonen">
+<!ENTITY Brighter "Helderder">
+<!ENTITY Gray "Grijs">
+<!ENTITY Menu "Menu">
+<!ENTITY Button "Knop">
+<!ENTITY Radio "Radio">
+<!ENTITY Checkbox "Selectievakje">
+<!ENTITY CuteButtons "SchattigeKnoppen">
+<!ENTITY Faded "Verschoten">
+<!ENTITY Hover "Zweven">
+<!ENTITY Default "Standaard">
+<!ENTITY Normal "Normaal">
+<!-- Dutch -->

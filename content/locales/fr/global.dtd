@@ -1,0 +1,21 @@
+<!ENTITY Options "Options">
+<!ENTITY Enable "Activer">
+<!ENTITY Disable "Désactiver">
+<!ENTITY BlurDisabled "Flouter les icônes désactivées">
+<!ENTITY Rotate "Tourner">
+<!ENTITY StatusBar "Icônes de la barre d'état">
+<!ENTITY Icons "Icônes">
+<!ENTITY Mosaic "Icône Style">
+<!ENTITY MosaicTip "Changer le style des icônes">
+<!ENTITY Brighter "Plus clair">
+<!ENTITY Gray "Gris">
+<!ENTITY Menu "Menu">
+<!ENTITY Button "Bouton">
+<!ENTITY Radio "Radio">
+<!ENTITY Checkbox "Case">
+<!ENTITY CuteButtons "MignonBoutons">
+<!ENTITY Faded "Délavé">
+<!ENTITY Hover "Flotter">
+<!ENTITY Default "Défaut">
+<!ENTITY Normal "Ordinaire">
+<!-- French -->

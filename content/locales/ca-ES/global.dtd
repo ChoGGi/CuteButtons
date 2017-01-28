@@ -1,0 +1,21 @@
+<!ENTITY Options "Opcions">
+<!ENTITY Enable "Habilitar">
+<!ENTITY Disable "Desactivar">
+<!ENTITY BlurDisabled "Desenfocament de mobilitat elements de menú">
+<!ENTITY Rotate "Girar">
+<!ENTITY StatusBar "Afegir Tanca Icones">
+<!ENTITY Icons "Icones">
+<!ENTITY Mosaic "Icona d'Estil">
+<!ENTITY MosaicTip "Canviar l'estil de les icones">
+<!ENTITY Brighter "Brillant">
+<!ENTITY Gray "Gris">
+<!ENTITY Menu "Menú">
+<!ENTITY Button "Botó">
+<!ENTITY Radio "Ràdio">
+<!ENTITY Checkbox "Casella de verificació">
+<!ENTITY CuteButtons "LindoBotons">
+<!ENTITY Faded "Descolorit">
+<!ENTITY Hover "Surar">
+<!ENTITY Default "Defecte">
+<!ENTITY Normal "Normalit">
+<!-- Catalan -->

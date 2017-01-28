@@ -1,0 +1,21 @@
+<!ENTITY Options "Valikud">
+<!ENTITY Enable "Luba">
+<!ENTITY Disable "Keela">
+<!ENTITY BlurDisabled "Udused keelatud ikoonid">
+<!ENTITY Rotate "Pööra">
+<!ENTITY StatusBar "Olekuriba Ikoonid">
+<!ENTITY Icons "Ikoonid">
+<!ENTITY Mosaic "Ikoon Stiil">
+<!ENTITY MosaicTip "Muuda stiili ikoonid">
+<!ENTITY Brighter "Heledam">
+<!ENTITY Gray "Hall">
+<!ENTITY Menu "Menüü">
+<!ENTITY Button "Nupp">
+<!ENTITY Radio "Raadio">
+<!ENTITY Checkbox "Kast">
+<!ENTITY CuteButtons "ArmasNupud">
+<!ENTITY Faded "Pleekinud">
+<!ENTITY Hover "Hõljuma">
+<!ENTITY Default "Vaikimisi">
+<!ENTITY Normal "Normaalne">
+<!-- Estonian -->

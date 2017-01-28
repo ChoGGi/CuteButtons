@@ -1,0 +1,21 @@
+<!ENTITY Options "Параметри">
+<!ENTITY Enable "Увімкнути">
+<!ENTITY Disable "Вимкнути">
+<!ENTITY BlurDisabled "Розмивати неактивні значки">
+<!ENTITY Rotate "поворот">
+<!ENTITY StatusBar "Значки на рядку стану">
+<!ENTITY Icons "Значки">
+<!ENTITY Mosaic "іконка Стиль">
+<!ENTITY MosaicTip "Змінити стиль іконок">
+<!ENTITY Brighter "Світліша">
+<!ENTITY Gray "сірий">
+<!ENTITY Menu "Меню">
+<!ENTITY Button "На кнопках">
+<!ENTITY Radio "радіо">
+<!ENTITY Checkbox "прапорець">
+<!ENTITY CuteButtons "симпатичніКнопки">
+<!ENTITY Faded "зів'ялі">
+<!ENTITY Hover "зависати">
+<!ENTITY Default "дефолт">
+<!ENTITY Normal "нормальний">
+<!-- Ukrainian -->

@@ -1,0 +1,21 @@
+<!ENTITY Options "Valgmulighed">
+<!ENTITY Enable "Aktiver">
+<!ENTITY Disable "Deaktiver">
+<!ENTITY BlurDisabled "Blur Deaktiver Menupunkter">
+<!ENTITY Rotate "Rotere">
+<!ENTITY StatusBar "Tilføjelse Lukke Ikoner">
+<!ENTITY Icons "Ikoner">
+<!ENTITY Mosaic "Ikon Stil">
+<!ENTITY MosaicTip "Skift stil af ikoner">
+<!ENTITY Brighter "Lysere">
+<!ENTITY Gray "Gråtoner">
+<!ENTITY Menu "Menu">
+<!ENTITY Button "Knap">
+<!ENTITY Radio "Radio">
+<!ENTITY Checkbox "Afkrydsningsfelt">
+<!ENTITY CuteButtons "CuteKnapper">
+<!ENTITY Faded "Falme">
+<!ENTITY Hover "Hover">
+<!ENTITY Default "Misligholdelse">
+<!ENTITY Normal "Normal">
+<!-- Danish -->

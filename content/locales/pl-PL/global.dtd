@@ -1,0 +1,21 @@
+<!ENTITY Options "Opcje">
+<!ENTITY Enable "Umożliwiać">
+<!ENTITY Disable "Wyłączyć">
+<!ENTITY BlurDisabled "Plama niepełnosprawnych Elementy menu">
+<!ENTITY Rotate "Obracać">
+<!ENTITY StatusBar "Dodatek na pasku ikony">
+<!ENTITY Icons "Ikony">
+<!ENTITY Mosaic "Ikona Stylu">
+<!ENTITY MosaicTip "Zmień styl ikony">
+<!ENTITY Brighter "jaśniej">
+<!ENTITY Gray "Szary">
+<!ENTITY Menu "Menu">
+<!ENTITY Button "Przycisk">
+<!ENTITY Radio "Radio">
+<!ENTITY Checkbox "Pole wyboru">
+<!ENTITY CuteButtons "ŚliczneButtons">
+<!ENTITY Faded "Wyblakłe">
+<!ENTITY Hover "Wahać się">
+<!ENTITY Default "Domyślne">
+<!ENTITY Normal "Normalna">
+<!-- Polish -->
