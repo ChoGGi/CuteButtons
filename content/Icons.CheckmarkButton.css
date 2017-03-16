@@ -67,3 +67,8 @@ checkbox[disabled="true"][checked="true"]:not([preference="sf-leftsidestar"])>.c
     treechildren:-moz-tree-image(hidden)
     {-moz-image-region:rect(160px 48px 176px 32px)!important;list-style-image:url("mosaic.png")!important}
     }
+
+/*resize options icons*/
+@-moz-document url-prefix("about:preferences"){
+    .checkbox-check,input[type="checkbox"]{width:16px!important;height:16px!important}
+    }
