@@ -8,7 +8,11 @@ const EXPORTED_SYMBOLS = ["cbCommon"];
 
 var cbCommon = {
 
+  //populated from bootstrap.js
+  addon: null,
   addonID: null,
+
+  nameSTR: Services.strings.createBundle('chrome://cutebuttons/locale/name.properties'),
   prefs: Services.prefs.getBranch("extensions.cutebuttons."),
   profileDir: FileUtils.getDir("ProfD",["CuteButtonsSVG"],true),
 
@@ -20,6 +24,52 @@ var cbCommon = {
   getAddonFile: function(file)
   {
     return FileUtils.getFile("ProfD",["extensions",cbCommon.addonID,"content",file]);
+  },
+
+  addToolbarButton: function(doc)
+  {
+    // Add toolbar button
+    let button = doc.createElement("toolbarbutton");
+    button.setAttribute("id", "cutebuttons-toolbar-button");
+    button.setAttribute("label", this.nameSTR.GetStringFromName("CuteButtons"));
+    button.setAttribute("class", "toolbarbutton-1 chromeclass-toolbar-additional");
+    button.addEventListener('click', function(event) {
+      //Services: needed for TB 8.0
+      cbCommon.openOptions(event.button,Services);
+    }, false);
+    return button;
+  },
+
+  //open options dialog from toolbarbutton
+  openOptions: function(button,Services)
+  {
+    //ignore unless left click
+    if (button != 0)
+      return;
+    //if options already opened then focus
+    var em = Services.wm.getMostRecentWindow("cutebuttonsOptionsWindow");
+    if (em)
+      em.focus();
+    else
+      cbCommon.getMainWindow().openDialog("chrome://cutebuttons/content/options.xul");
+  },
+
+  //default position to store toolbarbutton
+  toolButtonLoc: function()
+  {
+    switch(Services.appinfo.ID) {
+    case "{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}": //PM
+      return ["nav-bar","urlbar-display-box"];
+    case "{3550f703-e582-4d05-9a08-453d09bdfdc6}": //TB
+      return ["mail-toolbar-menubar2","menubar-items"];
+    case "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}": //SM
+      return ["nav-bar","nav-bar-inner"];
+    default: //FF (probably)
+      if (Services.vc.compare(Services.appinfo.version, "29.*") >= 0)
+        return ["nav-bar-customization-target","urlbar-container"];
+      else //FF < 29
+        return ["nav-bar","urlbar-container"];
+    }
   },
 
   //removes CuteButtonsSVG directory from Profile when user removes addon

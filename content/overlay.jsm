@@ -168,20 +168,6 @@ var cbOverlay = {
     });
   },
 
-  //open options dialog from toolbarbutton
-  openOptions: function(button,Services)
-  {
-    //ignore unless left click
-    if (button != 0)
-      return;
-    //if options already opened then focus
-    var em = Services.wm.getMostRecentWindow("cutebuttonsOptionsWindow");
-    if (em)
-      em.focus();
-    else
-      cbCommon.getMainWindow().openDialog("chrome://cutebuttons/content/options.xul");
-  },
-
   applyStyle: function(file,toggle,profile)
   {
     var sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService),

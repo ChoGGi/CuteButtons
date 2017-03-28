@@ -151,6 +151,8 @@
     name="extensions.cutebuttons.rotateicons" type="bool"/>
       <preference id="pref-statusbar"
     name="extensions.cutebuttons.statusbar" type="bool"/>
+      <preference id="pref-toolbarbutton"
+    name="extensions.cutebuttons.toolbarbutton" type="bool"/>
     </preferences>
 
     <groupbox>
@@ -192,7 +194,15 @@
             <radio label="&Disable;" onmousedown="cbOptions.applyCSS('statusbar',false)" value="false"/>
         </radiogroup>
     </groupbox>
-  </prefpane>
 
+    <groupbox>
+      <caption label="&Toolbar; &Button;"/>
+        <radiogroup id="ToolbarButtonRadio" orient="horizontal" value="" preference="pref-toolbarbutton">
+            <radio label="&Enable;" onmousedown="cbOptions.toolbarButtonToggle(true)" value="true"/>
+            <radio label="&Disable;" onmousedown="cbOptions.toolbarButtonToggle(false)" value="false"/>
+        </radiogroup>
+    </groupbox>
+
+  </prefpane>
   <script type="application/x-javascript" src="chrome://cutebuttons/content/options.js"/>
 </prefwindow>

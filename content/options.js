@@ -17,10 +17,10 @@ var cbOptions = {
     prefpane = document.getElementById("prefpaneIcons");
     if (Services.appinfo.OS == "Darwin")
       paneDeck.style.minHeight = prefpane.boxObject.height + "px";
-    //just can't seem to find a good way to resize a pref dialog after it's been opened
+    //just can't seem to find a good way to resize a pref dialog after it's been opened (be nice if mozilla just made pref dialogs resizeable).
     //paneDeck.style.minHeight = prefpane.boxObject.height+50 + "px";
     //paneDeck.style.minWidth = prefpane.boxObject.width+25 + "px";
-    window.sizeToContent();
+    sizeToContent();
 
     //load icons for tabs
     var elWin = document.getElementById("cutebuttons"),
@@ -129,6 +129,23 @@ var cbOptions = {
     window.setTimeout(function() {
       cbOverlay.applyStyle(which,false);
     },25);
+  },
+
+  toolbarButtonToggle: function(toggle)
+  {
+    Services.scriptloader.loadSubScript(cbCommon.addon.getResourceURI("includes/buttons.js").spec, self);
+    this.prefs.setBoolPref("toolbarbutton",toggle);
+    let doc = cbCommon.getMainWindow().document,
+    button;
+    if (this.prefs.getBoolPref("toolbarbutton") == true) {
+      setDefaultPosition("cutebuttons-toolbar-button",cbCommon.toolButtonLoc()[0],cbCommon.toolButtonLoc()[1]);
+      button = cbCommon.addToolbarButton(doc);
+      restorePosition(doc,button);
+    } else {
+      button = doc.getElementById("cutebuttons-toolbar-button");
+      if (button)
+        button.parentNode.removeChild(button)
+    }
   },
 
   uninit: function()
