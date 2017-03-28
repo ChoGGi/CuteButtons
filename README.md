@@ -2,7 +2,7 @@
 
 * [Changelog](https://choggi.org/misc/CuteButtonsCrystalSVG/change.log)
 * If you have icons missing/wrong, or you want an extension added then please send me an [email](mailto:CuteButtonsCrystalSVG@choggi.org).
-* for a signed extension see [here](https://choggi.org/misc/CuteButtonsCrystalSVG/), or [Releases](/releases) (the point releases will have a different ID then the release versions)
+* for a signed extension see [here](https://choggi.org/misc/CuteButtonsCrystalSVG/), or [Releases](https://github.com/ChoGGi/CuteButtons/releases) (the point releases will have a different ID then the release versions)
 
 ```
 Inspired by/uses code & icon set from CuteMenus - Crystal SVG (you don't need to have CuteMenus installed).
