@@ -14,6 +14,7 @@ locale cutebuttons eu-ES  jar:content/locales.zip!/eu-ES/
 locale cutebuttons fi-FI  jar:content/locales.zip!/fi-FI/
 locale cutebuttons fr     jar:content/locales.zip!/fr/
 locale cutebuttons he-IL  jar:content/locales.zip!/he-IL/
+locale cutebuttons hi-IN  jar:content/locales.zip!/hi-IN/
 locale cutebuttons hr-HR  jar:content/locales.zip!/hr-HR/
 locale cutebuttons hu-HU  jar:content/locales.zip!/hu-HU/
 locale cutebuttons it     jar:content/locales.zip!/it/
@@ -30,4 +31,5 @@ locale cutebuttons sv-SE  jar:content/locales.zip!/sv-SE/
 locale cutebuttons tr-TR  jar:content/locales.zip!/tr-TR/
 locale cutebuttons uk-UA  jar:content/locales.zip!/uk-UA/
 locale cutebuttons vi-VN  jar:content/locales.zip!/vi-VN/
-locale cutebuttons zh-CN  jar:content/locales.zip!/zh-CN/
+locale cutebuttons zh-CHS jar:content/locales.zip!/zh-CHS/
+locale cutebuttons zh-CHT jar:content/locales.zip!/zh-CHT/

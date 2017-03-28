@@ -6,12 +6,12 @@
 
     <em:id>CuteButtonsCrystalSVG@ChoGGi</em:id>
     <em:name>CuteButtons</em:name>
-    <em:version>0.5.3</em:version>
+    <em:version>0.5.4</em:version>
 
 <!--
     <em:id>CuteButtonsCrystalSVG@ChoGGi_TEST</em:id>
     <em:name>CuteButtons_TEST</em:name>
-    <em:version>0.5.3.2</em:version>
+    <em:version>0.5.4.2</em:version>
 -->
 
     <em:description>Adds icons to menus and buttons.</em:description>
@@ -61,7 +61,7 @@ https://addons.mozilla.org/pages/appversions
         <Description>
           <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
           <em:minVersion>8.0</em:minVersion>
-          <em:maxVersion>54.0</em:maxVersion>
+          <em:maxVersion>55.0</em:maxVersion>
         </Description>
       </em:targetApplication>
 
@@ -70,7 +70,7 @@ https://addons.mozilla.org/pages/appversions
         <Description>
           <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
           <em:minVersion>8.0</em:minVersion>
-          <em:maxVersion>54.0</em:maxVersion>
+          <em:maxVersion>55.0</em:maxVersion>
         </Description>
       </em:targetApplication>
 
@@ -79,7 +79,7 @@ https://addons.mozilla.org/pages/appversions
         <Description>
           <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
           <em:minVersion>2.5</em:minVersion>
-          <em:maxVersion>2.51</em:maxVersion>
+          <em:maxVersion>2.52</em:maxVersion>
         </Description>
       </em:targetApplication>
 
@@ -102,244 +102,261 @@ https://addons.mozilla.org/pages/appversions
       </em:targetApplication>
 
   <!-- Localization -->
+
+<!-- Arabic -->
     <em:localized>
       <Description>
-        <!-- Arabic -->
         <em:locale>ar</em:locale>
         <em:name>أزرار لطيف</em:name>
         <em:description>ويضيف الرموز إلى القوائم والأزرار.</em:description>
       </Description>
     </em:localized>
+<!-- Bulgarian -->
     <em:localized>
       <Description>
-        <!-- Bulgarian -->
         <em:locale>bg-BG</em:locale>
         <em:name>СладъкКопчета</em:name>
         <em:description>Добавя икони на менюта и бутони.</em:description>
       </Description>
     </em:localized>
+<!-- Catalan -->
     <em:localized>
       <Description>
-        <!-- Catalan -->
         <em:locale>ca-ES</em:locale>
         <em:name>LindoBotons</em:name>
         <em:description>Afegeix icones als menús i botons.</em:description>
       </Description>
     </em:localized>
+<!-- Czech -->
     <em:localized>
       <Description>
-        <!-- Czech -->
         <em:locale>cs-CZ</em:locale>
         <em:name>RoztomilýTlačítka</em:name>
         <em:description>Přidá ikon do menu a tlačítek.</em:description>
       </Description>
     </em:localized>
+<!-- Danish -->
     <em:localized>
       <Description>
-        <!-- Danish -->
         <em:locale>da-DK</em:locale>
         <em:name>CuteKnapper</em:name>
         <em:description>Tilføjer ikoner til menuer og knapper.</em:description>
       </Description>
     </em:localized>
+      <!-- German -->
     <em:localized>
       <Description>
-        <!-- German -->
         <em:locale>de</em:locale>
         <em:name>CuteButtons</em:name>
         <em:description>Fügt Symbole Menüs und Schaltflächen.</em:description>
       </Description>
     </em:localized>
+<!-- Greek -->
     <em:localized>
       <Description>
-        <!-- Greek -->
         <em:locale>el-GR</em:locale>
         <em:name>χαριτωμένοΚουμπιά</em:name>
         <em:description>Προσθέτει εικονίδια στα μενού και τα κουμπιά.</em:description>
       </Description>
     </em:localized>
+<!-- Spanish -->
     <em:localized>
       <Description>
-        <!-- Spanish -->
         <em:locale>es</em:locale>
         <em:name>BotonesLindos</em:name>
         <em:description>Añade iconos a los menús y botones.</em:description>
       </Description>
     </em:localized>
+<!-- Estonian -->
     <em:localized>
       <Description>
-        <!-- Estonian -->
         <em:locale>et-EE</em:locale>
         <em:name>ArmasNupud</em:name>
         <em:description>Lisab ikoonide menüüde ja nuppudega.</em:description>
       </Description>
     </em:localized>
+<!-- Basque -->
     <em:localized>
       <Description>
-        <!-- Basque -->
         <em:locale>eu-ES</em:locale>
         <em:name>CuteBotoia</em:name>
         <em:description>Menuak eta botoiak ikonoak gehitzen du.</em:description>
       </Description>
     </em:localized>
+<!-- Finnish -->
     <em:localized>
       <Description>
-        <!-- Finnish -->
         <em:locale>fi-FI</em:locale>
         <em:name>SöpöPainikkeet</em:name>
         <em:description>Lisää kuvakkeita valikoita ja painikkeita.</em:description>
       </Description>
     </em:localized>
+<!-- French -->
     <em:localized>
       <Description>
-        <!-- French -->
         <em:locale>fr</em:locale>
         <em:name>MignonBoutons</em:name>
         <em:description>Ajoute des icônes aux menus et boutons.</em:description>
       </Description>
     </em:localized>
+<!-- Hebrew -->
     <em:localized>
       <Description>
-        <!-- Hebrew -->
         <em:locale>he-IL</em:locale>
         <em:name>כפתורים חמודים</em:name>
         <em:description>מוסיף סמלי כדי התפריטים והלחצנים.</em:description>
       </Description>
     </em:localized>
+<!-- Hindi -->
     <em:localized>
       <Description>
-        <!-- Croatian -->
+        <em:locale>hi-IN</em:locale>
+        <em:name>प्याराबुटोनस</em:name>
+        <em:description>मेनू और बटन के लिए आइकन जोड़ता है</em:description>
+      </Description>
+    </em:localized>
+<!-- Croatian -->
+    <em:localized>
+      <Description>
         <em:locale>hr-HR</em:locale>
         <em:name>SlatkaTipke</em:name>
         <em:description>Dodaje ikone za izbornike i gumbe.</em:description>
       </Description>
     </em:localized>
+<!-- Hungarian -->
     <em:localized>
       <Description>
-        <!-- Hungarian -->
         <em:locale>hu-HU</em:locale>
         <em:name>AranyosGombok</em:name>
         <em:description>Ikont rendel a menük és gombok.</em:description>
       </Description>
     </em:localized>
+<!-- Italian -->
     <em:localized>
       <Description>
-        <!-- Italian -->
         <em:locale>it</em:locale>
         <em:name>PulsantiCarino</em:name>
         <em:description>Aggiunge le icone per i menu e pulsanti.</em:description>
       </Description>
     </em:localized>
+<!-- Japanese -->
     <em:localized>
       <Description>
-        <!-- Japanese -->
         <em:locale>ja-JP</em:locale>
         <em:name>かわいいボタン</em:name>
         <em:description>メニューやボタンにアイコンを追加します。</em:description>
       </Description>
     </em:localized>
+<!-- Korean -->
     <em:localized>
       <Description>
-        <!-- Korean -->
         <em:locale>ko-KR</em:locale>
         <em:name>귀여운 버튼</em:name>
         <em:description>메뉴와 버튼에 아이콘을 추가합니다.</em:description>
       </Description>
     </em:localized>
+<!-- Dutch -->
     <em:localized>
       <Description>
-        <!-- Dutch -->
         <em:locale>nl</em:locale>
         <em:name>SchattigeKnoppen</em:name>
         <em:description>Voegt pictogrammen om menu's en knoppen.</em:description>
       </Description>
     </em:localized>
+<!-- Polish -->
     <em:localized>
       <Description>
-        <!-- Polish -->
         <em:locale>pl-PL</em:locale>
         <em:name>ŚliczneButtons</em:name>
         <em:description>Dodaje ikony do menu i przycisków.</em:description>
       </Description>
     </em:localized>
+<!-- Portuguese -->
     <em:localized>
       <Description>
-        <!-- Portuguese -->
         <em:locale>pt</em:locale>
         <em:name>FofaBotões</em:name>
         <em:description>Adiciona ícones para menus e botões.</em:description>
       </Description>
     </em:localized>
+<!-- Romanian -->
     <em:localized>
       <Description>
-        <!-- Romanian -->
         <em:locale>ro-RO</em:locale>
         <em:name>DrăguţButoane</em:name>
         <em:description>Adaugă pictograme pentru meniuri și butoane.</em:description>
       </Description>
     </em:localized>
+<!-- Russian -->
     <em:localized>
       <Description>
-        <!-- Russian -->
         <em:locale>ru-RU</em:locale>
         <em:name>СимпатичныеКнопки</em:name>
         <em:description>Добавляет значки в меню и кнопок.</em:description>
       </Description>
     </em:localized>
+<!-- Slovak -->
     <em:localized>
       <Description>
-        <!-- Slovak -->
         <em:locale>sk-SK</em:locale>
         <em:name>RozkošnýTlačidlá</em:name>
         <em:description>Pridá ikon do menu a tlačidiel.</em:description>
       </Description>
     </em:localized>
+<!-- Serbian -->
     <em:localized>
       <Description>
-        <!-- Serbian -->
         <em:locale>sr-SP</em:locale>
         <em:name>Цутедугмад</em:name>
         <em:description>Додаје иконе у менијима и дугмадима.</em:description>
       </Description>
     </em:localized>
+<!-- Swedish -->
     <em:localized>
       <Description>
-        <!-- Swedish -->
         <em:locale>sv-SE</em:locale>
         <em:name>SötKnappar</em:name>
         <em:description>Lägger ikoner till menyer och knappar.</em:description>
       </Description>
     </em:localized>
+<!-- Turkish -->
     <em:localized>
       <Description>
-        <!-- Turkish -->
         <em:locale>tr-TR</em:locale>
         <em:name>SevimliDüğmeler</em:name>
         <em:description>Menüler ve düğmeler simgeler ekler.</em:description>
       </Description>
     </em:localized>
+<!-- Ukrainian -->
     <em:localized>
       <Description>
-        <!-- Ukrainian -->
         <em:locale>uk-UA</em:locale>
         <em:name>симпатичніКнопки</em:name>
         <em:description>Додає значки в меню і кнопок.</em:description>
       </Description>
     </em:localized>
+<!-- Vietnamese -->
     <em:localized>
       <Description>
-        <!-- Vietnamese -->
         <em:locale>vi-VN</em:locale>
         <em:name>dễ thương nút</em:name>
         <em:description>Thêm biểu tượng vào các menu và các nút.</em:description>
       </Description>
     </em:localized>
+<!-- Chinese (Simplified) -->
     <em:localized>
       <Description>
-        <!-- Chinese -->
-        <em:locale>zh-CN</em:locale>
+        <em:locale>zh-CHS</em:locale>
         <em:name>可爱的按钮</em:name>
         <em:description>将图标添加到菜单和按钮。</em:description>
+      </Description>
+    </em:localized>
+<!-- Chinese (Traditional) -->
+    <em:localized>
+      <Description>
+        <em:locale>zh-CHT</em:locale>
+        <em:name>可愛的按鈕</em:name>
+        <em:description>將圖標添加到菜單和按鈕。</em:description>
       </Description>
     </em:localized>
 
