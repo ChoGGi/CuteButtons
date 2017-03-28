@@ -65,7 +65,7 @@
  * ***** END LICENSE BLOCK ***** */
 
 (function(global) {
-  var positions = {};
+  let positions = {};
 
   /*
    * Assigns position that will be used by `restorePosition`
@@ -90,13 +90,13 @@
 
     ($("navigator-toolbox") || $("mail-toolbox")).palette.appendChild(button);
 
-    var i, toolbar, currentset, idx,
+    let toolbar, currentset, idx,
         toolbars = $("toolbar", true);
-    for (i = 0; i < toolbars.length; ++i) {
-      var tb = toolbars[i];
+    for (let i = 0; i < toolbars.length; ++i) {
+      let tb = toolbars[i];
       currentset = getCurrentset(tb),
       idx = currentset.indexOf(button.id);// jshint ignore:line
-      if (idx !== -1) {
+      if (idx != -1) {
         toolbar = tb;
         break;
       }
@@ -104,17 +104,17 @@
 
     // saved position not found, using the default one, if any
     if (!toolbar && (button.id in positions)) {
-      var [tbID, beforeID] = positions[button.id];
+      let [tbID, beforeID] = positions[button.id];
       toolbar = $(tbID);
       [currentset, idx] = persist(doc, toolbar, button.id, beforeID);
     }
 
     if (toolbar) {
-      if (idx !== -1) {
+      if (idx != -1) {
         // inserting the button before the first item in `currentset`
         // after `idx` that is present in the document
-        for (i = idx + 1; i < currentset.length; ++i) {
-          var before = $(currentset[i]);
+        for (let i = idx + 1; i < currentset.length; ++i) {
+          let before = $(currentset[i]);
           if (before) {
             toolbar.insertItem(button.id, before);
             return;
@@ -126,9 +126,9 @@
   };
 
   function persist(document, toolbar, buttonID, beforeID) {
-    var currentset = getCurrentset(toolbar),
+    let currentset = getCurrentset(toolbar),
         idx = (beforeID && currentset.indexOf(beforeID)) || -1;
-    if (idx !== -1) {
+    if (idx != -1) {
       currentset.splice(idx, 0, buttonID);
     } else {
       currentset.push(buttonID);
@@ -162,7 +162,7 @@
  */
 function unload(callback, container) {
   // Initialize the array of unloaders on the first usage
-  var unloaders = unload.unloaders;
+  let unloaders = unload.unloaders;
   if (!unloaders)
     unloaders = unload.unloaders = [];
 
@@ -180,7 +180,7 @@ function unload(callback, container) {
     container.addEventListener("unload", unloader, false);
 
     // Wrap the callback to additionally remove the unload listener
-    var origCallback = callback;
+    let origCallback = callback;
     callback = function() {
       container.removeEventListener("unload", unloader, false);
       removeUnloader();
@@ -199,7 +199,7 @@ function unload(callback, container) {
 
   // Provide a way to remove the unloader
   function removeUnloader() {
-    var index = unloaders.indexOf(unloader);
+    let index = unloaders.indexOf(unloader);
     if (index !== -1)
       unloaders.splice(index, 1);
   }
