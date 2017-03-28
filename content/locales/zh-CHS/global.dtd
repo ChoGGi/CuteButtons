@@ -1,0 +1,22 @@
+<!ENTITY Options "选项">
+<!ENTITY Enable "启用">
+<!ENTITY Disable "禁用">
+<!ENTITY BlurDisabled "模糊禁用菜单项">
+<!ENTITY Rotate "旋转">
+<!ENTITY StatusBar "附加栏图标">
+<!ENTITY Icons "图标">
+<!ENTITY Mosaic "图标样式">
+<!ENTITY MosaicTip "改变图标的风格">
+<!ENTITY Brighter "更亮">
+<!ENTITY Gray "灰色">
+<!ENTITY Menu "菜单">
+<!ENTITY Button "按钮">
+<!ENTITY Radio "无线电">
+<!ENTITY Checkbox "复选框">
+<!ENTITY CuteButtons "可爱的按钮">
+<!ENTITY Faded "褪色">
+<!ENTITY Hover "徘徊">
+<!ENTITY Default "默认">
+<!ENTITY Normal "正常">
+<!ENTITY Toolbar "工具栏">
+<!-- Chinese (Simplified) -->

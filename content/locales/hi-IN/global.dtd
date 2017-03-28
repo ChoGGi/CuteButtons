@@ -1,0 +1,22 @@
+<!ENTITY Options "विकल्प">
+<!ENTITY Enable "सक्षम करें">
+<!ENTITY Disable "अक्षम करें">
+<!ENTITY BlurDisabled "ब्लर अक्षम मेनू आइटम">
+<!ENTITY Rotate "घुमाएँ">
+<!ENTITY StatusBar "ऐड-ऑन बार आइकन">
+<!ENTITY Icons "प्रतीक">
+<!ENTITY Mosaic "चिह्न शैली">
+<!ENTITY MosaicTip "प्रतीक की शैली बदलें">
+<!ENTITY Brighter "उज्ज्वल">
+<!ENTITY Gray "ग्रे">
+<!ENTITY Menu "मेन्यू">
+<!ENTITY Button "बटन">
+<!ENTITY Radio "रेडियो">
+<!ENTITY Checkbox "चेकबॉक्स">
+<!ENTITY CuteButtons "प्याराबुटोनस">
+<!ENTITY Faded "फीका">
+<!ENTITY Hover "हॉवर">
+<!ENTITY Default "चूक">
+<!ENTITY Normal "सामान्य">
+<!ENTITY Toolbar "टूलबार">
+<!-- Hindi -->
