@@ -24,7 +24,7 @@ aReasonWindow = null;
       }
     }
 
-    //make sure JSMs are fresh
+    //make sure JSMs are fresh?
     Services.obs.notifyObservers(null, "startupcache-invalidate", null);
     //same for strings on old fox?
     Services.strings.flushBundles();
@@ -68,15 +68,18 @@ aReasonWindow = null;
     prefsD.setBoolPref("iconshover",true);
     prefsD.setBoolPref("rotateicons",true);
     prefsD.setBoolPref("statusbar",true);
-    prefsD.setBoolPref("disabletoolbarbutton",false);
+    prefsD.setBoolPref("toolbarbutton",false);
 
     Cu.import("chrome://cutebuttons/content/common.jsm");
     Cu.import("chrome://cutebuttons/content/overlay.jsm");
 
     //https://github.com/dgutov/bmreplace
+    cbCommon.addon = addon;
     Services.scriptloader.loadSubScript(addon.getResourceURI("includes/buttons.js").spec, self);
-    if (ADDON_INSTALL == aReason)
-      setDefaultPosition("cutebuttons-toolbar-button",toolButtonLoc()[0],toolButtonLoc()[1]);
+    if (ADDON_INSTALL == aReason) {
+      if (cbCommon.prefs.getBoolPref("toolbarbutton") == true)
+        setDefaultPosition("cutebuttons-toolbar-button",cbCommon.toolButtonLoc()[0],cbCommon.toolButtonLoc()[1]);
+    }
 
     //if we're using _TEST version
     cbCommon.addonID = aData.id;
@@ -97,17 +100,9 @@ aReasonWindow = null;
     var doc = window.document,
       win = doc.querySelector("window");
 
-    if (cbCommon.prefs.getBoolPref("disabletoolbarbutton") == false){
-      // Add toolbar button
-      var button = doc.createElement("toolbarbutton");
-      button.setAttribute("id", "cutebuttons-toolbar-button");
-      button.setAttribute("label", stringBundle.GetStringFromName("CuteButtons"));
-      button.setAttribute("class", "toolbarbutton-1 chromeclass-toolbar-additional");
-      button.addEventListener('click', function(event) {
-        //Services: needed for TB 8.0
-        cbOverlay.openOptions(event.button,Services);
-      }, false);
-      restorePosition(doc, button);
+    if (cbCommon.prefs.getBoolPref("toolbarbutton") == true) {
+      let button = cbCommon.addToolbarButton(doc);
+      restorePosition(doc,button);
     }
 
     //only delay on gecko start
@@ -250,23 +245,6 @@ aReasonWindow = null;
     onWindowTitleChange: function(xulWindow, newTitle) {}
   };
 
-  //default position to store toolbarbutton
-  function toolButtonLoc()
-  {
-    switch(Services.appinfo.ID) {
-    case "{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}": //PM
-      return ["nav-bar","urlbar-display-box"];
-    case "{3550f703-e582-4d05-9a08-453d09bdfdc6}": //TB
-      return ["mail-toolbar-menubar2","menubar-items"];
-    case "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}": //SM
-      return ["nav-bar","nav-bar-inner"];
-    default: //FF (probably)
-      if (Services.vc.compare(Services.appinfo.version, "29.*") >= 0)
-        return ["nav-bar-customization-target","urlbar-container"];
-      else //FF < 29
-        return ["nav-bar","urlbar-container"];
-    }
-  }
 function install(){}
 function uninstall(){}
 
