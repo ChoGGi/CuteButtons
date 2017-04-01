@@ -51,7 +51,7 @@ var cbCommon = {
     if (em)
       em.focus();
     else
-      cbCommon.getMainWindow().openDialog("chrome://cutebuttons/content/options.xul");
+      this.getMainWindow().openDialog("chrome://cutebuttons/content/options.xul");
   },
 
   //default position to store toolbarbutton
@@ -99,10 +99,12 @@ var cbCommon = {
     {
       let fileAddon = cbCommon.getAddonFile(file),
       fileProfile = cbCommon.getProfileFile(file);
+
       cbCommon.copyFile(fileAddon,fileProfile,file);
     }
     function filelist()
     {
+      copyCSS("Icons.Normal.css");
       copyCSS("Icons.Hover.css");
       copyCSS("Icons.CheckmarkButton.css");
       copyCSS("Icons.CheckmarkButtonHover.css");
@@ -119,16 +121,15 @@ var cbCommon = {
     let cssFileProfile = cbCommon.getProfileFile("Icons.Normal.css"),
     cssFileAddon = cbCommon.getAddonFile("Icons.Normal.css");
 
-    //check if file doesn't exist or check if stored date and addon file date are different
+    //check if file doesn't exist, if so copy files over
     if (cssFileProfile.exists() == false) {
-      cssFileAddon.copyTo(this.profileDir,"Icons.Normal.css");
       filelist();
+    //check if stored date and addon file date are different
     } else if (cssFileAddon.lastModifiedTime != this.prefs.getCharPref("cssdate")) {
-      cssFileProfile.remove(false);
-      cssFileAddon.copyTo(this.profileDir,"Icons.Normal.css");
       filelist();
       //add date of addon file to pref for next startup check above
-      //to let people can edit files in \Profile\CuteButtonsSVG (at least till next version update)
+      //lets people edit files in \Profile\CuteButtonsSVG
+      //well, really lets me send people edited files without having to sign the ext...
       this.prefs.setCharPref("cssdate",cssFileAddon.lastModifiedTime);
     }
 
@@ -195,15 +196,15 @@ var cbCommon = {
     fileProfile = cbCommon.getProfileFile(nameProfile);
 
     if (cbCommon.prefs.getIntPref(pref) != mosaic) {
-    //numbers don't match; no need to check file dates, just copy and call it a day
+      //numbers don't match; no need to check file existence/date, just copy and call it a day
       cbCommon.copyFile(fileAddon,fileProfile,nameProfile);
       //update mosaicWhich so we aren't copying the same file all the time
       cbCommon.prefs.setIntPref(pref,mosaic);
-    } else if (fileProfile.exists() == false)
-    //if it doesn't exist (first run)
+    } else if (fileProfile.exists() == false) {
+      //if it doesn't exist (first run)
       fileAddon.copyTo(cbCommon.profileDir,nameProfile);
-    else if (fileProfile.lastModifiedTime != fileAddon.lastModifiedTime) {
-    //profile file time is different from addon file time so copy over
+    } else if (fileProfile.lastModifiedTime != fileAddon.lastModifiedTime) {
+      //profile file time is different from addon file time so copy over
       cbCommon.copyFile(fileAddon,fileProfile,nameProfile);
     }
   },
@@ -213,6 +214,7 @@ var cbCommon = {
   {
     let wm = Services.wm.getMostRecentWindow,
     mainWin = wm("navigator:browser");//Firefox/Palemoon/Seamonkey
+
     if (!mainWin)
       mainWin = wm("mail:3pane");//thunderbird
     return mainWin;

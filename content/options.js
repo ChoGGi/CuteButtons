@@ -12,9 +12,11 @@ var cbOptions = {
   init: function()
   {
     //actually fix prefwindow size... (https://bugzilla.mozilla.org/show_bug.cgi?id=283697)
+    //or not I give up on this crap...
     let prefwindow = document.getElementById("cutebuttons"),
     paneDeck = document.getAnonymousElementByAttribute(prefwindow, "class", "paneDeckContainer"),
     prefpane = document.getElementById("prefpaneIcons");
+
     if (Services.appinfo.OS == "Darwin")
       paneDeck.style.minHeight = prefpane.boxObject.height + "px";
     //just can't seem to find a good way to resize a pref dialog after it's been opened (be nice if mozilla just made pref dialogs resizeable).
@@ -48,9 +50,9 @@ var cbOptions = {
   {
     //toggle disabled state of child checkbox
     let checkbox = document.getElementById(child);
-    if (checkbox.disabled == true)
+    if (checkbox.disabled == true) {
       checkbox.disabled = false;
-    else {
+    } else {
       checkbox.disabled = true;
       checkbox.checked = false;
       //update user pref element
@@ -137,6 +139,7 @@ var cbOptions = {
     this.prefs.setBoolPref("toolbarbutton",toggle);
     let doc = cbCommon.getMainWindow().document,
     button;
+
     if (this.prefs.getBoolPref("toolbarbutton") == true) {
       setDefaultPosition("cutebuttons-toolbar-button",cbCommon.toolButtonLoc()[0],cbCommon.toolButtonLoc()[1]);
       button = cbCommon.addToolbarButton(doc);
@@ -153,12 +156,12 @@ var cbOptions = {
     //only fire if a mosiac has been changed
     let p = this.prefs;
     if (p.getIntPref("mosaicnormal") == p.getIntPref("mosaicnormalwhich") &&
-        p.getIntPref("mosaichover") == p.getIntPref("mosaichoverwhich"))
+        p.getIntPref("mosaichover") == p.getIntPref("mosaichoverwhich")) {
       return;
+    }
 
-    //need to unregister css files to have changed mosaic take effect
+    //need to unregister css files to have changed mosaic take effect (whenever user reloads XUL)
     cbOverlay.unLoadCSS();
-
     //change mosaic file
     cbCommon.mosaicCopy();
 

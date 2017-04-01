@@ -108,7 +108,7 @@ aReasonWindow = null;
     //only delay on gecko start
     let timeout = 0;
     if (APP_STARTUP == aReasonWindow)
-      timeout = 1000;
+      timeout = 500;
 
     //let firstPaint go first
     window.setTimeout(function() {
@@ -116,6 +116,7 @@ aReasonWindow = null;
       cbOverlay.name = stringBundle.GetStringFromName("CuteButtons");
       cbOverlay.init(window);
     },timeout);
+
     //other than for the toolbarbutton
     if (!cbOverlay.startup)
       cbOverlay.applyStyle("toolbarbutton.css",true);

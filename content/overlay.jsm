@@ -65,25 +65,25 @@ var cbOverlay = {
 
   loadCSS: function()
   {
-    let prefs = this.prefs;
+    let p = this.prefs;
 
-    if (prefs.getBoolPref("icons") == true)
+    //main icon file
+    if (p.getBoolPref("icons") == true)
       this.mainIconsCSS(true);
-
     //hide menu/button icons
-    if (prefs.getBoolPref("buttonicons") == false)
+    if (p.getBoolPref("buttonicons") == false)
       cbOverlay.applyStyle("NoIconsButtons.css",true);
-    if (prefs.getBoolPref("menuicons") == false)
+    if (p.getBoolPref("menuicons") == false)
       cbOverlay.applyStyle("NoIconsMenus.css",true);
     //statusbar icons
-    if (prefs.getBoolPref("statusbar") == true)
+    if (p.getBoolPref("statusbar") == true)
       this.statusbarCSS(true);
-
+    //all the rest
     function apply(name,file,profile)
     {
-      if (profile == true && prefs.getBoolPref(name) == true)
+      if (profile == true && p.getBoolPref(name) == true)
         cbOverlay.applyStyle(file,true);
-      else if (prefs.getBoolPref(name) == true)
+      else if (p.getBoolPref(name) == true)
         cbOverlay.applyStyle(file,true,true);
     }
     apply("iconshover","Icons.Hover.css");
@@ -102,9 +102,9 @@ var cbOverlay = {
   //called from options.js and shutdown()
   unLoadCSS: function()
   {
-    function apply(file,profile)
+    function apply(file,extFolder)
     {
-      if (profile == true)
+      if (extFolder == true)
         cbOverlay.applyStyle(file,false);
       else
         cbOverlay.applyStyle(file,false,true);
@@ -138,12 +138,11 @@ var cbOverlay = {
     let osString = Services.appinfo.OS;
     cbOverlay.applyStyle("Icons.Normal.css",toggle,true);
     //fix for drop markers under linux/*BSD
-    //ff 4.0 doesn't have .contains/.includes
+    //ff 8.0 doesn't have .contains/.includes
     if (osString == "Linux" || osString.search(/BSD/i) >= 0 || osString == "DragonFly")
-      //drop markers having extra icon under *BSD/Linux
       cbOverlay.applyStyle("UnixFix.css",toggle);
     //half the menuitems under OSX have checked=false, so I need to use this to style them
-    //(I normally don't style them unless options>checkbox icons>menu radio is selected)
+    //(we normally don't style them unless options>checkbox icons>radio menu is selected)
     if (osString == "Darwin")
       cbOverlay.applyStyle("OSXFix.css",toggle);
   },
@@ -154,13 +153,13 @@ var cbOverlay = {
       for (let i = 0; i < aAddons.length; i++) {
         let a = aAddons[i];
         if (a.id == "status4evar@caligonstudios.com" || a.id == "statusbar@palemoon.org") {
-          //Statusbar-4evar is installed and enabled
           if (a.isActive == true) {
+            //Statusbar-4evar is installed and enabled
             cbOverlay.applyStyle("Statusbar-4evar.css",toggle,true);
             break;
           }
         } else if (Services.appinfo.ID != "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"){
-          //Statusbar-4evar isn't installed, so apply old style (FF has no statusbar, so ignore)
+          //Statusbar-4evar isn't installed; apply old style (FF has no statusbar, so it's ignored)
           cbOverlay.applyStyle("Statusbar.css",toggle,true);
           break;
         }
@@ -172,14 +171,16 @@ var cbOverlay = {
   {
     let sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService),
     uri;
+
     if (profile) {//css file in \Profile\CuteButtonsSVG
       let cssFile = "file:///" + cbCommon.getProfileFile(file).path.replace(/\\/g,"/");
       uri = Services.io.newURI(cssFile,null,null);
     } else //css file in extension directory
       uri = Services.io.newURI("chrome://cutebuttons/content/" + file,null,null);
     //uri.spec
+
     //USER_SHEET has highest precedence
-    //AGENT_SHEET can override stuff AUTHOR can't, but has lower precedence
+    //AGENT_SHEET can override stuff AUTHOR can't (scrollbars), but has lower precedence
     if (toggle == false) {
       if (sss.sheetRegistered(uri,sss.AUTHOR_SHEET))
         sss.unregisterSheet(uri,sss.AUTHOR_SHEET);
