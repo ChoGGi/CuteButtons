@@ -1,6 +1,7 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 /*radio checked*/
+#organizerScopeBar>toolbarbutton[id^="scopeBar"][type="radio"][checked="true"]:hover,
 radio:hover>.radio-spacer-box>.radio-check-box1[selected="true"]>.radio-check-box2>.radio-check,
 radio:hover>.radio-check[selected="true"],
 radio:hover>.radio-check-box1[selected="true"]>.radio-check-box2
@@ -13,6 +14,7 @@ radio[disabled="true"]:hover>.radio-check-box1[selected="true"]>.radio-check-box
 {-moz-image-region:rect(336px 112px 352px 96px)!important;list-style-image:url("mosaic.hover.png")!important}
 
 /*radio unchecked*/
+#organizerScopeBar>toolbarbutton[id^="scopeBar"][type="radio"]:hover,
 radio:hover>.radio-spacer-box>.radio-check-box1>.radio-check-box2>.radio-check,
 radio:hover>.radio-check,
 radio:hover>.radio-check-box1>.radio-check-box2
