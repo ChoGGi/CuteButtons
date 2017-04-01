@@ -47,7 +47,7 @@ var cbCommon = {
     if (button != 0)
       return;
     //if options already opened then focus
-    var em = Services.wm.getMostRecentWindow("cutebuttonsOptionsWindow");
+    let em = Services.wm.getMostRecentWindow("cutebuttonsOptionsWindow");
     if (em)
       em.focus();
     else
@@ -97,7 +97,7 @@ var cbCommon = {
   {
     function copyCSS(file)
     {
-      var fileAddon = cbCommon.getAddonFile(file),
+      let fileAddon = cbCommon.getAddonFile(file),
       fileProfile = cbCommon.getProfileFile(file);
       cbCommon.copyFile(fileAddon,fileProfile,file);
     }
@@ -116,7 +116,7 @@ var cbCommon = {
       copyCSS("Statusbar.css");
     }
 
-    var cssFileProfile = cbCommon.getProfileFile("Icons.Normal.css"),
+    let cssFileProfile = cbCommon.getProfileFile("Icons.Normal.css"),
     cssFileAddon = cbCommon.getAddonFile("Icons.Normal.css");
 
     //check if file doesn't exist or check if stored date and addon file date are different
@@ -145,7 +145,7 @@ var cbCommon = {
   //copy over css files from addon to profile directory, if dates are newer (or user switched mosaic file)
   mosaicCopy: function()
   {
-    var m = this.mosaicFile,
+    let m = this.mosaicFile,
     mosaicNormal = this.prefs.getIntPref("mosaicnormal"),
     mosaicHover = this.prefs.getIntPref("mosaichover");
 
@@ -182,7 +182,7 @@ var cbCommon = {
 
   mosaicFile: function(nameAddon,mosaic,filename)
   {
-    var nameProfile,
+    let nameProfile,
     pref;
     if (filename) {
       nameProfile = "mosaic.png";
@@ -191,7 +191,7 @@ var cbCommon = {
       nameProfile = "mosaic.hover.png";
       pref = "mosaichoverwhich";
     }
-    var fileAddon = cbCommon.getAddonFile(nameAddon),
+    let fileAddon = cbCommon.getAddonFile(nameAddon),
     fileProfile = cbCommon.getProfileFile(nameProfile);
 
     if (cbCommon.prefs.getIntPref(pref) != mosaic) {
@@ -211,7 +211,7 @@ var cbCommon = {
   //get the first window available
   getMainWindow: function()
   {
-    var wm = Services.wm.getMostRecentWindow,
+    let wm = Services.wm.getMostRecentWindow,
     mainWin = wm("navigator:browser");//Firefox/Palemoon/Seamonkey
     if (!mainWin)
       mainWin = wm("mail:3pane");//thunderbird

@@ -8,7 +8,7 @@ Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 
 //test if this is still needed on older versions, or if flushBundles is fine
 //name.properties?' + Math.random()),
-var stringBundle = Services.strings.createBundle('chrome://cutebuttons/locale/name.properties'),
+let stringBundle = Services.strings.createBundle('chrome://cutebuttons/locale/name.properties'),
 aReasonWindow = null;
 
   function startup(aData, aReason)
@@ -29,7 +29,7 @@ aReasonWindow = null;
     //same for strings on old fox?
     Services.strings.flushBundles();
 
-    var prefsD = Services.prefs.getDefaultBranch("extensions.cutebuttons.");
+    let prefsD = Services.prefs.getDefaultBranch("extensions.cutebuttons.");
     //load default prefs
     prefsD.setCharPref("cssdate","");
     prefsD.setBoolPref("buttonicons",true);
@@ -97,7 +97,7 @@ aReasonWindow = null;
     if (!window)
       return;
 
-    var doc = window.document,
+    let doc = window.document,
       win = doc.querySelector("window");
 
     if (cbCommon.prefs.getBoolPref("toolbarbutton") == true) {
@@ -106,7 +106,7 @@ aReasonWindow = null;
     }
 
     //only delay on gecko start
-    var timeout = 0;
+    let timeout = 0;
     if (APP_STARTUP == aReasonWindow)
       timeout = 1000;
 
@@ -186,7 +186,7 @@ aReasonWindow = null;
 
     function deleteEl(type)
     {
-      var element = window.document.getElementById(type);
+      let element = window.document.getElementById(type);
       if (element)
         element.parentNode.removeChild(element);
     }
@@ -198,11 +198,11 @@ aReasonWindow = null;
     //probably a better way to do this...
     function deletePal(type)
     {
-      var toolbox = window.document.getElementById(type);
+      let toolbox = window.document.getElementById(type);
       if (!toolbox)
         return;
-        for (var i = 0; i < toolbox.palette.childNodes.length; i++) {
-          var item = toolbox.palette.childNodes[i];
+        for (let i = 0; i < toolbox.palette.childNodes.length; i++) {
+          let item = toolbox.palette.childNodes[i];
           if (item.id == "cutebuttons-toolbar-button"){
             cbCommon.dump("===");
             try {
@@ -220,7 +220,7 @@ aReasonWindow = null;
   {
     function enumWin(wintype)
     {
-      var windows = Services.wm.getEnumerator(wintype);
+      let windows = Services.wm.getEnumerator(wintype);
       while (windows.hasMoreElements())
         todo(windows.getNext().QueryInterface(Ci.nsIDOMWindow));
     }
@@ -228,14 +228,14 @@ aReasonWindow = null;
     enumWin("mail:3pane");
   }
 
-  var WindowListener = {
+  let WindowListener = {
     onOpenWindow: function(xulWindow)
     {
-      var window = xulWindow.QueryInterface(Ci.nsIInterfaceRequestor).getInterface(Ci.nsIDOMWindow);
+      let window = xulWindow.QueryInterface(Ci.nsIInterfaceRequestor).getInterface(Ci.nsIDOMWindow);
       function onWindowLoad()
       {
         window.removeEventListener("load",onWindowLoad);
-        var element = window.document.documentElement;
+        let element = window.document.documentElement;
         if (element.getAttribute("windowtype") == "navigator:browser" || element.getAttribute("windowtype") == "mail:3pane")
           loadIntoWindow(window);
       }
@@ -250,18 +250,18 @@ function uninstall(){}
 
 //https://github.com/dgutov/bmreplace
 /* jshint ignore:start */
-var self = this,
+let self = this,
 icon,
 prefHandlers = [];
 
-var prefsObserver = {
+let prefsObserver = {
   observe: function(subject, topic, data) {
     if (topic == "nsPref:changed")
       prefHandlers.forEach(function(func) {func(data);});
   }
 };
 
-var addon = {
+let addon = {
   getResourceURI: function(filePath)
   {
     return {spec: __SCRIPT_URI_SPEC__ + "/../" + filePath};

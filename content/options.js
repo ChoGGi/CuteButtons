@@ -12,7 +12,7 @@ var cbOptions = {
   init: function()
   {
     //actually fix prefwindow size... (https://bugzilla.mozilla.org/show_bug.cgi?id=283697)
-    var prefwindow = document.getElementById("cutebuttons"),
+    let prefwindow = document.getElementById("cutebuttons"),
     paneDeck = document.getAnonymousElementByAttribute(prefwindow, "class", "paneDeckContainer"),
     prefpane = document.getElementById("prefpaneIcons");
     if (Services.appinfo.OS == "Darwin")
@@ -23,7 +23,7 @@ var cbOptions = {
     sizeToContent();
 
     //load icons for tabs
-    var elWin = document.getElementById("cutebuttons"),
+    let elWin = document.getElementById("cutebuttons"),
     paneIcons = document.getAnonymousElementByAttribute(elWin,"pane","prefpaneIcons"),
     paneOp = document.getAnonymousElementByAttribute(elWin,"pane","prefpaneOptions");
 
@@ -47,14 +47,14 @@ var cbOptions = {
   checkboxToggle: function(child,that,childName,thatName)
   {
     //toggle disabled state of child checkbox
-    var checkbox = document.getElementById(child);
+    let checkbox = document.getElementById(child);
     if (checkbox.disabled == true)
       checkbox.disabled = false;
     else {
       checkbox.disabled = true;
       checkbox.checked = false;
       //update user pref element
-      var pref = document.getElementById(checkbox.getAttribute("preference"));
+      let pref = document.getElementById(checkbox.getAttribute("preference"));
       pref.value = false;
     }
     //apply parent/child styles
@@ -144,14 +144,14 @@ var cbOptions = {
     } else {
       button = doc.getElementById("cutebuttons-toolbar-button");
       if (button)
-        button.parentNode.removeChild(button)
+        button.parentNode.removeChild(button);
     }
   },
 
   uninit: function()
   {
     //only fire if a mosiac has been changed
-    var p = this.prefs;
+    let p = this.prefs;
     if (p.getIntPref("mosaicnormal") == p.getIntPref("mosaicnormalwhich") &&
         p.getIntPref("mosaichover") == p.getIntPref("mosaichoverwhich"))
       return;

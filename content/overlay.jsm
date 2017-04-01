@@ -17,7 +17,7 @@ var cbOverlay = {
   init: function(window)
   {
     //do all the fiddle faddle on first window available
-    var document = window.document;
+    let document = window.document;
 
     //run once (init is called for opened windows)
     //only need to copy mosaic and apply css once
@@ -46,10 +46,10 @@ var cbOverlay = {
     }
 
     //add image element to status4evar, and add a listener to update image label
-    var statusBarText = document.getElementById("status4evar-status-text");
+    let statusBarText = document.getElementById("status4evar-status-text");
     if (!statusBarText || document.getElementById("status4evar-status-image"))
       return;
-    var statusBarIcon = document.createElement("image");
+    let statusBarIcon = document.createElement("image");
 
     statusBarIcon.id = "status4evar-status-image";
     //statusBarIcon.setAttribute("label","");
@@ -65,7 +65,7 @@ var cbOverlay = {
 
   loadCSS: function()
   {
-    var prefs = this.prefs;
+    let prefs = this.prefs;
 
     if (prefs.getBoolPref("icons") == true)
       this.mainIconsCSS(true);
@@ -135,7 +135,7 @@ var cbOverlay = {
 
   mainIconsCSS: function(toggle)
   {
-    var osString = Services.appinfo.OS;
+    let osString = Services.appinfo.OS;
     cbOverlay.applyStyle("Icons.Normal.css",toggle,true);
     //fix for drop markers under linux/*BSD
     //ff 4.0 doesn't have .contains/.includes
@@ -151,8 +151,8 @@ var cbOverlay = {
   statusbarCSS: function(toggle)
   {
     AddonManager.getAllAddons(function(aAddons) {
-      for (var i = 0; i < aAddons.length; i++) {
-        var a = aAddons[i];
+      for (let i = 0; i < aAddons.length; i++) {
+        let a = aAddons[i];
         if (a.id == "status4evar@caligonstudios.com" || a.id == "statusbar@palemoon.org") {
           //Statusbar-4evar is installed and enabled
           if (a.isActive == true) {
@@ -170,15 +170,16 @@ var cbOverlay = {
 
   applyStyle: function(file,toggle,profile)
   {
-    var sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService),
+    let sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService),
     uri;
     if (profile) {//css file in \Profile\CuteButtonsSVG
-      var cssFile = "file:///" + cbCommon.getProfileFile(file).path.replace(/\\/g,"/");
+      let cssFile = "file:///" + cbCommon.getProfileFile(file).path.replace(/\\/g,"/");
       uri = Services.io.newURI(cssFile,null,null);
     } else //css file in extension directory
       uri = Services.io.newURI("chrome://cutebuttons/content/" + file,null,null);
     //uri.spec
     //USER_SHEET has highest precedence
+    //AGENT_SHEET can override stuff AUTHOR can't, but has lower precedence
     if (toggle == false) {
       if (sss.sheetRegistered(uri,sss.AUTHOR_SHEET))
         sss.unregisterSheet(uri,sss.AUTHOR_SHEET);
