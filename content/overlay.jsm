@@ -179,14 +179,20 @@ var cbOverlay = {
       uri = Services.io.newURI("chrome://cutebuttons/content/" + file,null,null);
     //uri.spec
 
-    //USER_SHEET has highest precedence
-    //AGENT_SHEET can override stuff AUTHOR can't (scrollbars), but has lower precedence
+    /* USER_SHEET has highest precedence
+          AUTHOR_SHEET
+          AGENT_SHEET can override stuff AUTHOR can't (scrollbars)
+          user agent declarations
+          user normal declarations
+          author normal declarations
+          author important declarations
+          user important declarations */
     if (toggle == false) {
-      if (sss.sheetRegistered(uri,sss.AUTHOR_SHEET))
-        sss.unregisterSheet(uri,sss.AUTHOR_SHEET);
+      if (sss.sheetRegistered(uri,sss.AGENT_SHEET))
+        sss.unregisterSheet(uri,sss.AGENT_SHEET);
     } else {
-      if (!sss.sheetRegistered(uri,sss.AUTHOR_SHEET))
-        sss.loadAndRegisterSheet(uri,sss.AUTHOR_SHEET);
+      if (!sss.sheetRegistered(uri,sss.AGENT_SHEET))
+        sss.loadAndRegisterSheet(uri,sss.AGENT_SHEET);
       //Note to reviewer: styles unregistered during shutdown()
     }
   }
