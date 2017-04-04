@@ -4,4 +4,4 @@ If you apply a rule with a list-style-image to certain elements, and change the 
 it will stay there even if you set list-style-image to "none"
 this toggles -moz-appearance for the image
 */
-.listcell-check,.checkbox-check{-moz-appearance:none}
+.listcell-check,.checkbox-check{-moz-appearance:none!important}

@@ -1,9 +1,11 @@
 "use strict";
+/* jshint ignore:start */
 const {classes: Cc, interfaces: Ci, utils: Cu} = Components;
 Cu.import("chrome://cutebuttons/content/common.jsm");
 Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource://gre/modules/AddonManager.jsm");
 const EXPORTED_SYMBOLS = ["cbOverlay"];
+/* jshint ignore:end */
 //cbCommon.dump();
 
 var cbOverlay = {
@@ -139,8 +141,11 @@ var cbOverlay = {
     cbOverlay.applyStyle("Icons.Normal.css",toggle,true);
     //fix for drop markers under linux/*BSD
     //ff 8.0 doesn't have .contains/.includes
-    if (osString == "Linux" || osString.search(/BSD/i) >= 0 || osString == "DragonFly")
+    if (osString == "Linux" ||
+        osString.search(/BSD/i) >= 0 ||
+        osString == "DragonFly") {
       cbOverlay.applyStyle("UnixFix.css",toggle);
+    }
     //half the menuitems under OSX have checked=false, so I need to use this to style them
     //(we normally don't style them unless options>checkbox icons>radio menu is selected)
     if (osString == "Darwin")
@@ -152,7 +157,8 @@ var cbOverlay = {
     AddonManager.getAllAddons(function(aAddons) {
       for (let i = 0; i < aAddons.length; i++) {
         let a = aAddons[i];
-        if (a.id == "status4evar@caligonstudios.com" || a.id == "statusbar@palemoon.org") {
+        if (a.id == "status4evar@caligonstudios.com" ||
+            a.id == "statusbar@palemoon.org") {
           if (a.isActive == true) {
             //Statusbar-4evar is installed and enabled
             cbOverlay.applyStyle("Statusbar-4evar.css",toggle,true);
@@ -169,24 +175,28 @@ var cbOverlay = {
 
   applyStyle: function(file,toggle,profile)
   {
-    let sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService),
+    let sss = Cc["@mozilla.org/content/style-sheet-service;1"]
+              .getService(Ci.nsIStyleSheetService),
     uri;
 
     if (profile) {//css file in \Profile\CuteButtonsSVG
-      let cssFile = "file:///" + cbCommon.getProfileFile(file).path.replace(/\\/g,"/");
+      let cssFile = "file:///" + cbCommon
+                                .getProfileFile(file).path.replace(/\\/g,"/");
       uri = Services.io.newURI(cssFile,null,null);
     } else //css file in extension directory
       uri = Services.io.newURI("chrome://cutebuttons/content/" + file,null,null);
     //uri.spec
 
-    /* USER_SHEET has highest precedence
-          AUTHOR_SHEET
-          AGENT_SHEET can override stuff AUTHOR can't (scrollbars)
-          user agent declarations
-          user normal declarations
-          author normal declarations
-          author important declarations
-          user important declarations */
+/*
+      USER_SHEET has highest precedence
+      AUTHOR_SHEET
+      AGENT_SHEET can override stuff AUTHOR can't (scrollbars)
+      user agent declarations
+      user normal declarations
+      author normal declarations
+      author important declarations
+      user important declarations
+*/
     if (toggle == false) {
       if (sss.sheetRegistered(uri,sss.AGENT_SHEET))
         sss.unregisterSheet(uri,sss.AGENT_SHEET);

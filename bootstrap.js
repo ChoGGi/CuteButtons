@@ -8,7 +8,8 @@ Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 
 //test if this is still needed on older versions, or if flushBundles is fine
 //name.properties?' + Math.random()),
-let stringBundle = Services.strings.createBundle('chrome://cutebuttons/locale/name.properties'),
+let stringBundle = Services.strings.createBundle(
+                    'chrome://cutebuttons/locale/name.properties'),
 aReasonWindow = null;
 
   function startup(aData, aReason)
@@ -19,7 +20,8 @@ aReasonWindow = null;
         Cm.addBootstrappedManifestLocation(aData.installPath);
       try {
       } catch(e) {//FF 4.0-7.0
-        Services.console.logStringMessage("CuteButtons:\n " + "Know a way to load chrome.manifest without addBootstrappedManifestLocation?");
+        Services.console.logStringMessage("CuteButtons:\n " +
+          "Know a way to load chrome.manifest without addBootstrappedManifestLocation?");
         throw (e);
       }
     }
@@ -75,13 +77,18 @@ aReasonWindow = null;
 
     //https://github.com/dgutov/bmreplace
     cbCommon.addon = addon;
-    Services.scriptloader.loadSubScript(addon.getResourceURI("includes/buttons.js").spec, self);
-    if (ADDON_INSTALL == aReason) {
-      if (cbCommon.prefs.getBoolPref("toolbarbutton") == true)
-        setDefaultPosition("cutebuttons-toolbar-button",cbCommon.toolButtonLoc()[0],cbCommon.toolButtonLoc()[1]);
+    Services.scriptloader.loadSubScript (
+                    addon.getResourceURI("includes/buttons.js").spec, self
+    );
+    if (aReason == ADDON_INSTALL) {
+      if (cbCommon.prefs.getBoolPref("toolbarbutton") == true) {
+        setDefaultPosition("cutebuttons-toolbar-button",
+                          cbCommon.toolButtonLoc()[0],
+                          cbCommon.toolButtonLoc()[1]);
+      }
     }
 
-    //if we're using _TEST version
+    //incase we're using _TEST version
     cbCommon.addonID = aData.id;
 
     // Load into any existing windows
@@ -107,7 +114,7 @@ aReasonWindow = null;
 
     //only delay on gecko start
     let timeout = 0;
-    if (APP_STARTUP == aReasonWindow)
+    if (aReasonWindow == APP_STARTUP)
       timeout = 500;
 
     //let firstPaint go first
@@ -117,7 +124,7 @@ aReasonWindow = null;
       cbOverlay.init(window);
     },timeout);
 
-    //other than for the toolbarbutton
+    //but don't delay the toolbarbutton
     if (!cbOverlay.startup)
       cbOverlay.applyStyle("toolbarbutton.css",true);
 
@@ -148,11 +155,12 @@ aReasonWindow = null;
     cbOverlay.unLoadCSS();
 
     //correct way to remove a MutationObserver?
+    //remove statusbar listener
     if (cbOverlay.mutationOb)
       cbOverlay.mutationOb.disconnect();
 
     //uninstall addon
-    if (ADDON_UNINSTALL == aReason) {
+    if (aReason == ADDON_UNINSTALL) {
       //remove prefs
       Services.prefs.getBranch("extensions.cutebuttons.").deleteBranch("");
       //delete profile\CuteButtonsSVG directory
@@ -209,7 +217,7 @@ aReasonWindow = null;
             try {
             item.boxObject.element.remove();
             item.remove();
-            } catch(e){/*already removed, or just not there so ignore*/}
+            } catch(e){/*already removed, or not there so ignore*/}
           }
         }
     }
@@ -232,13 +240,16 @@ aReasonWindow = null;
   let WindowListener = {
     onOpenWindow: function(xulWindow)
     {
-      let window = xulWindow.QueryInterface(Ci.nsIInterfaceRequestor).getInterface(Ci.nsIDOMWindow);
+      let window = xulWindow.QueryInterface(Ci.nsIInterfaceRequestor)
+                  .getInterface(Ci.nsIDOMWindow);
       function onWindowLoad()
       {
         window.removeEventListener("load",onWindowLoad);
         let element = window.document.documentElement;
-        if (element.getAttribute("windowtype") == "navigator:browser" || element.getAttribute("windowtype") == "mail:3pane")
+        if (element.getAttribute("windowtype") == "navigator:browser" ||
+            element.getAttribute("windowtype") == "mail:3pane") {
           loadIntoWindow(window);
+        }
       }
       window.addEventListener("load",onWindowLoad);
     },
@@ -246,34 +257,34 @@ aReasonWindow = null;
     onWindowTitleChange: function(xulWindow, newTitle) {}
   };
 
-function install(){}
-function uninstall(){}
+  function install(){}
+  function uninstall(){}
 
-//https://github.com/dgutov/bmreplace
-/* jshint ignore:start */
-let self = this,
-icon,
-prefHandlers = [];
+  //https://github.com/dgutov/bmreplace
+  /* jshint ignore:start */
+  let self = this,
+  icon,
+  prefHandlers = [];
 
-let prefsObserver = {
-  observe: function(subject, topic, data) {
-    if (topic == "nsPref:changed")
-      prefHandlers.forEach(function(func) {func(data);});
-  }
-};
+  let prefsObserver = {
+    observe: function(subject, topic, data) {
+      if (topic == "nsPref:changed")
+        prefHandlers.forEach(function(func) {func(data);});
+    }
+  };
 
-let addon = {
-  getResourceURI: function(filePath)
+  let addon = {
+    getResourceURI: function(filePath)
+    {
+      return {spec: __SCRIPT_URI_SPEC__ + "/../" + filePath};
+    }
+  };
+
+  function $(node, childId)
   {
-    return {spec: __SCRIPT_URI_SPEC__ + "/../" + filePath};
+    if (node.getElementById)
+      return node.getElementById(childId);
+    else
+      return node.querySelector("#" + childId);
   }
-};
-
-function $(node, childId)
-{
-  if (node.getElementById)
-    return node.getElementById(childId);
-  else
-    return node.querySelector("#" + childId);
-}
-/* jshint ignore:end */
+  /* jshint ignore:end */
