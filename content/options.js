@@ -21,13 +21,10 @@ var cbOptions = {
     prefpane = document
         .getElementById("prefpaneIcons");
 
-    if (Services.appinfo.OS == "Darwin")
+    if (Services.appinfo.OS == "Darwin") {
       paneDeck.style.minHeight = prefpane.boxObject.height + "px";
-    //just can't seem to find a good way to resize a pref dialog after it's been opened
-    // (be nice if mozilla just made pref dialogs resizeable).
-    //paneDeck.style.minHeight = prefpane.boxObject.height+50 + "px";
-    //paneDeck.style.minWidth = prefpane.boxObject.width+25 + "px";
-    sizeToContent();
+      sizeToContent();
+    }
 
     //load icons for tabs
     let elWin = document.getElementById("cutebuttons"),

@@ -8,7 +8,6 @@
   title="&CuteButtons; &Options;"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   windowtype="cutebuttonsOptionsWindow"
-  style="padding:0"
   persist="screenX screenY height width"
   onunload="cbOptions.uninit()"
   onload="cbOptions.init()"
