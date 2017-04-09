@@ -1,39 +1,42 @@
-# CuteButtons
+# Stylish-Custom
+Stylish v2.0.* and up (not tested nor supported on older versions)
 
-* [Changelog](https://choggi.org/misc/CuteButtonsCrystalSVG/change.log)
-* If you have icons missing/wrong, or you want an extension added then please send me an [email](mailto:CuteButtonsCrystalSVG@choggi.org).
-* for a signed extension see [here](https://choggi.org/misc/CuteButtonsCrystalSVG/), or [Releases](https://github.com/ChoGGi/CuteButtons/releases) (the point releases will have a different ID then the release versions)
+* [Changelog](https://choggi.org/misc/Stylish-Custom/change.log)
+* [Stylish-Custom Guide](https://choggi.org/guide)
+* [Forum Thread](https://forum.userstyles.org/discussion/2799/stylish-custom/p1)
+* for a signed extension see [here](https://choggi.org/misc/Stylish-Custom/), or [Releases](https://github.com/ChoGGi/Stylish-Custom/releases) (the point releases will have a different ID then the release versions)
+
+### Some features:
+```
+Customizable edit dialog (drag n drop)
+Import/export styles and stylish-custom settings
+Style info listing with quick enable toggle (dbl-click to edit style, can also search within Styles, delete multiple styles)
+Restores the !important button, Color/Site Rules menuitems, enable/update checks
+Page button (left click for style page, right for edit page, it also posts the code. middle if you don't want to post code)
+Adds search/replace to edit dialog (ctrl+F, ctrl+R, and F3)
+Press ! to type !important (can be changed in edit dialog)
+Select and un/comment/merge lines of text
+Preview/unpreview style changes without closing dialog
+Toggle styles based on which page you're on
+Lots more...
+```
 
 ```
-Inspired by/uses code & icon set from CuteMenus - Crystal SVG (you don't need to have CuteMenus installed).
-```
+Stylish-Custom for Stylish v1.4.3:
+https://choggi.org/misc/Stylish-Custom/Stylish_v1.4.3
 
-### Adds icons to these extensions, and generic icons to others:
-##### (this list hasn't been updated for ages)
+There is also Stylish Editor Modified:
+https://addons.palemoon.org/extensions/appearance/stylish-editor-modified/
+You could try having them both installed, but you are on your own for any issues/bugs.
 ```
-Adblock Filterset.G Updater, Adblock Plus, AI Roboform, Autocopy, Autofill Forms
-Back to Top, Bookmark DD, British English Dictionary
-Calc, Cache Status. Cache View, CacheViewer, Chatzilla, Chrome List, CLE, Clippings, CookieSafe, CustomizeGoogle
-Dictionarysearch, Download Statusbar, DownThemAll!
-Easy DragToGo, Enigmail, Explore Chrome
-FasterFox, Favicon Picker 2, FEBE, Fetch Text URL, Firebug, FireFTP, Fission, FlashGot, Forecastfox, FormFiller, FoxMarks, Foxy Proxy, Foxytunes
-Gmail Manager, Gmail Notifier, Googlebar Lite, GreaseMonkey, GSpace
-HTML Validator
-IE Tab, IEView Lite
-JSView
-keyconfig
-Lightning, LinkVisitor, Live HTTP Headers, LiveClick
-Menu Editor, MinimizeToTray, MR Tech Toolkit (Local Install), Multiple Tab Handler
-NoScript, NoSquint, Nostalgy
-Objection, ObPwd, OmniSidebar, Organize Search Engines, Organize Status Bar
-PageShortcuts, Password Hasher, Password Exporter, PasswordMaker, PDF Download, Personal Menu, Perspectives, Public Fox
-QuickNote
-RDFViewer, Redirect Remover, Remove it Permanently, RSS Ticker
-Sage, Save Link in Folder, Secure Login, Session Manager, Smart Link, SmoothWheel, SQLite Manager, Show Picture, Splash!, Split Browser, StumbleUpon, Stylish, Stylish-Custom, StyleSheet Chooser Plus
-Tab Mix Plus, TargetKiller, Titlebar Tweaks, Tweak Network
-Update Notifier, Update Scanner, Unplug
-View Cookies
-WeatherBug, Wizz RSS
-Xmarks
-LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
+### Current issue(s):
+
+```
+The Style Info window can only be manually updated.
+
+If you use new search and you hide the search bar in the customize window,
+then close the edit window, open it, and then re-add the search bar:
+it'll be hidden till you reopen the edit window.
+
+If you use replace once with the caret after the search text it just skips forward instead of wrapping.
 ```
