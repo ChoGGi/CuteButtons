@@ -437,7 +437,7 @@ menu[id$="devtoolsMenu"],menuitem[oncommand^="s3downbar.action.antivirus"],[id$=
 #contextBlock,menuitem[oncommand*="safebrowsing.getReportURL"],#p3pDialog,button[oncommand="IgnoreAll();"],#context-bugmenot-view,#updateblocklist>.dialog-button-box>button[dlgtype="accept"]>.button-box>.button-icon,#block[oncommand*=".addException"],menuitem[oncommand$="RestorePhishingData();"],#bugmenot
 {-moz-image-region:rect(112px 256px 128px 240px)!important;list-style-image:url("mosaic.png")!important}
 /*mouse *input*/
-#node-menu-scrollnodeintoview,toolbarbutton[key="key_responsiveUI"],#contentAreaContextMenu>menu[vdh-watching]>menupopup>menu:nth-child(2),#tilt-menu,[id=":popup:nickname"],menuitem[oncommand="AlertBox_O_O.addQuickAlert('context');"],#editor-tabbox-toolbar-menu2,radio[pane="prefpane-context-menu"],menuitem[id^="linkification-"][id$="-linkify"],#abp-toolbar-ehh-selectelement,menuitem[oncommand="GBL_PrepareMainMenu(event, 'shopping')"],[id$="-select"],[id$="_select"],[id="item:selectByClick"]
+#abp-toolbar-popup>[class="elemhidehelper-item"],#node-menu-scrollnodeintoview,toolbarbutton[key="key_responsiveUI"],#contentAreaContextMenu>menu[vdh-watching]>menupopup>menu:nth-child(2),#tilt-menu,[id=":popup:nickname"],menuitem[oncommand="AlertBox_O_O.addQuickAlert('context');"],#editor-tabbox-toolbar-menu2,radio[pane="prefpane-context-menu"],menuitem[id^="linkification-"][id$="-linkify"],#abp-toolbar-ehh-selectelement,menuitem[oncommand="GBL_PrepareMainMenu(event, 'shopping')"],[id$="-select"],[id$="_select"],[id="item:selectByClick"]
 {-moz-image-region:rect(240px 32px 256px 16px)!important;list-style-image:url("mosaic.png")!important}
 /*video*/
 [id$="-castvideo"],[id$="_castvideo"],#useCurrent,[id$="video-fullscreen"],#GBL-Context-Video,menuitem[oncommand="GBL_PrepareMainMenu(event, 'video')"],[id$="viewvideo"],#colors,button[oncommand$=".setHomePageToCurrent();"],#browserUseCurrent,menuitem[oncommand$="(event, 'images')"],#advancedAppearance,button[oncommand$=".configureColors();"],button[oncommand$=".showColors();"]
@@ -1175,6 +1175,10 @@ menuitem[oncommand="SQLiteManager.checkIntegrity('quick')"],#UndoCompare,menuite
 @-moz-document url-prefix(chrome://adblockplus/content/ui/settings.xul){
     button[dlgtype="extra2"]>.button-box>.button-icon
     {-moz-image-region:rect(192px 192px 208px 176px)!important}
+    }
+@-moz-document url-prefix(chrome://adblockplus/content/ui/filters.xul){
+    #close>.button-box>.button-icon
+    {-moz-image-region:rect(160px 48px 176px 32px)!important}
     }
 @-moz-document url-prefix(chrome://calendar/content/calendar-properties-dialog.xul){
     button[dlgtype="extra1"]>.button-box>.button-icon

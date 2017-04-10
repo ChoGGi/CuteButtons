@@ -259,7 +259,7 @@ menu[id$="devtoolsMenu"]:hover,menuitem[oncommand^="s3downbar.action.antivirus"]
 #contextBlock:hover,menuitem[oncommand*="safebrowsing.getReportURL"]:hover,#p3pDialog:hover,button[oncommand="IgnoreAll();"]:hover,#context-bugmenot-view:hover,#updateblocklist>.dialog-button-box>button[dlgtype="accept"]:hover>.button-box>.button-icon,#block[oncommand*=".addException"]:hover,menuitem[oncommand$="RestorePhishingData();"]:hover,#bugmenot:hover
 {-moz-image-region:rect(112px 256px 128px 240px)!important;list-style-image:url("mosaic.hover.png")!important}
 /*mouse *input*/
-#node-menu-scrollnodeintoview:hover,toolbarbutton[key="key_responsiveUI"]:hover,#contentAreaContextMenu>menu[vdh-watching]>menupopup>menu:nth-child(2):hover,#tilt-menu:hover,[id=":popup:nickname"]:hover,menuitem[oncommand="AlertBox_O_O.addQuickAlert('context');"]:hover,#editor-tabbox-toolbar-menu2:hover,radio[pane="prefpane-context-menu"]:hover,menuitem[id^="linkification-"][id$="-linkify"]:hover,#abp-toolbar-ehh-selectelement:hover,menuitem[oncommand="GBL_PrepareMainMenu(event, 'shopping')"]:hover,[id$="-select"]:hover,[id$="_select"]:hover,[id="item:selectByClick"]:hover
+#abp-toolbar-popup>[class="elemhidehelper-item"]:hover,#node-menu-scrollnodeintoview:hover,toolbarbutton[key="key_responsiveUI"]:hover,#contentAreaContextMenu>menu[vdh-watching]>menupopup>menu:nth-child(2):hover,#tilt-menu:hover,[id=":popup:nickname"]:hover,menuitem[oncommand="AlertBox_O_O.addQuickAlert('context');"]:hover,#editor-tabbox-toolbar-menu2:hover,radio[pane="prefpane-context-menu"]:hover,menuitem[id^="linkification-"][id$="-linkify"]:hover,#abp-toolbar-ehh-selectelement:hover,menuitem[oncommand="GBL_PrepareMainMenu(event, 'shopping')"]:hover,[id$="-select"]:hover,[id$="_select"]:hover,[id="item:selectByClick"]:hover
 {-moz-image-region:rect(240px 32px 256px 16px)!important;list-style-image:url("mosaic.hover.png")!important}
 /*video*/
 [id$="-castvideo"]:hover,[id$="_castvideo"]:hover,#useCurrent:hover,[id$="video-fullscreen"]:hover,#GBL-Context-Video:hover,menuitem[oncommand="GBL_PrepareMainMenu(event, 'video')"]:hover,[id$="viewvideo"]:hover,#colors:hover,button[oncommand$=".setHomePageToCurrent();"]:hover,#browserUseCurrent:hover,menuitem[oncommand$="(event:hover, 'images')"]:hover,#advancedAppearance:hover,button[oncommand$=".configureColors();"]:hover,button[oncommand$=".showColors();"]:hover
@@ -998,6 +998,10 @@ menuitem[oncommand="SQLiteManager.checkIntegrity('quick')"]:hover,#UndoCompare:h
 @-moz-document url-prefix(chrome://adblockplus/content/ui/settings.xul){
     button[dlgtype="extra2"]:hover>.button-box>.button-icon
     {-moz-image-region:rect(192px 192px 208px 176px)!important;list-style-image:url("mosaic.hover.png")!important}
+    }
+@-moz-document url-prefix(chrome://adblockplus/content/ui/filters.xul){
+    #close>.button-box>.button-icon
+    {-moz-image-region:rect(160px 48px 176px 32px)!important}
     }
 @-moz-document url-prefix(chrome://calendar/content/calendar-properties-dialog.xul){
     button[dlgtype="extra1"]:hover>.button-box>.button-icon
