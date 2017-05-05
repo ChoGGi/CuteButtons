@@ -1,6 +1,6 @@
 "use strict";
 /* jshint ignore:start */
-const {classes: Cc, interfaces: Ci, utils: Cu, manager: Cm, results: Cr} = Components;
+const {classes:Cc,interfaces:Ci,utils:Cu,manager:Cm,results:Cr} = Components;
 Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 /* jshint ignore:end */
@@ -21,7 +21,7 @@ aReasonWindow = null;
       try {
       } catch(e) {//FF 4.0-7.0
         Services.console.logStringMessage("CuteButtons:\n " +
-          "Know a way to load chrome.manifest without addBootstrappedManifestLocation?");
+"Know a way to load chrome.manifest without addBootstrappedManifestLocation?");
         throw (e);
       }
     }
@@ -168,7 +168,7 @@ aReasonWindow = null;
         //fails if user has file opened, so try block it is
         cbCommon.cleanUpProfileDir();
       } catch(e) {
-        cbCommon.dump('Failed to remove "CuteButtonsSVG" directory from user profile');
+          cbCommon.dump('Failed to remove *User Profile*\CuteButtonsSVG');
         if (e.stack)
           Cu.reportError(e.stack);
       }

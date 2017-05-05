@@ -62,7 +62,8 @@ var cbOverlay = {
         statusBarIcon.setAttribute("label",mutation.target.value);
       });
     });
-    this.mutationOb.observe(statusBarText,{attributes:true,attributeFilter:["value"]});
+    this.mutationOb
+          .observe(statusBarText,{attributes:true,attributeFilter:["value"]});
   },
 
   loadCSS: function()
@@ -164,7 +165,8 @@ var cbOverlay = {
             cbOverlay.applyStyle("Statusbar-4evar.css",toggle,true);
             break;
           }
-        } else if (Services.appinfo.ID != "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"){
+        } else if (Services.appinfo.ID !=
+                    "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}") {
           //Statusbar-4evar isn't installed; apply old style (FF has no statusbar, so it's ignored)
           cbOverlay.applyStyle("Statusbar.css",toggle,true);
           break;
@@ -184,7 +186,8 @@ var cbOverlay = {
                                 .getProfileFile(file).path.replace(/\\/g,"/");
       uri = Services.io.newURI(cssFile,null,null);
     } else //css file in extension directory
-      uri = Services.io.newURI("chrome://cutebuttons/content/" + file,null,null);
+      uri = Services.io
+                    .newURI("chrome://cutebuttons/content/" + file,null,null);
     //uri.spec
 
 /*

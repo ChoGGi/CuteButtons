@@ -26,17 +26,19 @@ var cbCommon = {
 
   getAddonFile: function(file)
   {
-    return FileUtils.getFile("ProfD",["extensions",cbCommon.addonID,"content",file]);
+    return FileUtils
+            .getFile("ProfD",["extensions",cbCommon.addonID,"content",file]);
   },
 
   addToolbarButton: function(doc)
   {
     // Add toolbar button
     let button = doc.createElement("toolbarbutton");
-    button.setAttribute("id", "cutebuttons-toolbar-button");
-    button.setAttribute("label", this.nameSTR.GetStringFromName("CuteButtons"));
-    button.setAttribute("class", "toolbarbutton-1 chromeclass-toolbar-additional");
-    button.addEventListener('click', function(event) {
+    button.setAttribute("id","cutebuttons-toolbar-button");
+    button.setAttribute("label",this.nameSTR.GetStringFromName("CuteButtons"));
+    button.setAttribute("class",
+                        "toolbarbutton-1 chromeclass-toolbar-additional");
+    button.addEventListener('click',function(event) {
       //Services: needed for TB 8.0
       cbCommon.openOptions(event.button,Services);
     }, false);
@@ -54,7 +56,8 @@ var cbCommon = {
     if (em)
       em.focus();
     else
-      this.getMainWindow().openDialog("chrome://cutebuttons/content/options.xul");
+      this.getMainWindow()
+            .openDialog("chrome://cutebuttons/content/options.xul");
   },
 
   //default position to store toolbarbutton
@@ -128,7 +131,8 @@ var cbCommon = {
     if (cssFileProfile.exists() == false) {
       filelist();
     //check if stored date and addon file date are different
-    } else if (cssFileAddon.lastModifiedTime != this.prefs.getCharPref("cssdate")) {
+    } else if (cssFileAddon.lastModifiedTime !=
+                                          this.prefs.getCharPref("cssdate")) {
       filelist();
       //add date of addon file to pref for next startup check above
       //lets people edit files in \Profile\CuteButtonsSVG
@@ -168,7 +172,7 @@ var cbCommon = {
       break;
     }
 
-    switch(mosaicHover) {
+    switch (mosaicHover) {
       case 0:
         m("mosaic.normal.png",mosaicHover);
       break;
