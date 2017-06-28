@@ -1,12 +1,12 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 /*so we can use custom radio icons*/
-radio>.radio-check,/*osx*/
+radio>.radio-check,
 radio>.radio-spacer-box,
 radio>.radio-spacer-box>.radio-check-box1,
 radio>.radio-spacer-box>.radio-check-box1>.radio-check-box2,
 radio>.radio-check-box1>.radio-check-box2,radio>.radio-check-box1
-{height:auto!important;border:none!important;-moz-appearance:none!important}
+{width:16px!important;height:16px!important;border:none!important;-moz-appearance:none!important}
 
 radio>.radio-spacer-box>.radio-check-box1>.radio-check-box2,
 radio>.radio-check-box1>.radio-check-box2
