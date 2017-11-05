@@ -69,5 +69,4 @@ mosaic.hover.png
 ```
 * Copy over whichever content/*.css files you want to the chrome directory
 
-* Firefox profile:
-https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data
+* [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)
