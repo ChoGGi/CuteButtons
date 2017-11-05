@@ -63,7 +63,7 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 @import url("UnixFix.css");
 ```
 * Copy over whichever content/*.css files you want to the chrome directory
-* Rename one or more of the content/mosaic files to:
+* Rename one (or two if using *Hover.css) of the content/mosaic files to:
 ```
 mosaic.png
 mosaic.hover.png
