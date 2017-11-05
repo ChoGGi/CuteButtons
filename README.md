@@ -62,7 +62,7 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 @import url("Statusbar-4evar.css");
 @import url("UnixFix.css");
 ```
-(for UserChrome.css: Make sure to add these lines above the @namespace line)
+(for UserChrome.css: Make sure to add these lines **above** the @namespace line)
 
 * Copy over whichever content/*.css files you want to the chrome directory
 * Rename one of the content/mosaic files to:
@@ -70,4 +70,4 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 mosaic.png
 mosaic.hover.png (if using *Hover.css)
 ```
-* and place in the chrome folder along with the CSS files
+* and place in the chrome directory along with the CSS files
