@@ -62,7 +62,7 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 @import url("Statusbar-4evar.css");
 @import url("UnixFix.css");
 ```
-* (for UserChrome.css: Make sure to add these lines above the @namespace line)
+(for UserChrome.css: Make sure to add these lines above the @namespace line)
 
 * Copy over whichever content/*.css files you want to the chrome directory
 * Rename one of the content/mosaic files to:
