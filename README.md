@@ -41,11 +41,6 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 
 
 ### How to manually install in Firefox 57+
-* Rename one or more of the content/mosaic files to:
-```
-mosaic.png
-mosaic.hover.png
-```
 * In your [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)\chrome directory create/open UserChrome.css/UserContent.css
 * Add these lines to both files:
 ```
@@ -68,3 +63,9 @@ mosaic.hover.png
 @import url("UnixFix.css");
 ```
 * Copy over whichever content/*.css files you want to the chrome directory
+* Rename one or more of the content/mosaic files to:
+```
+mosaic.png
+mosaic.hover.png
+```
+* and place in the chrome folder along with the CSS files
