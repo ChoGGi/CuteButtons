@@ -46,7 +46,7 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 mosaic.png
 mosaic.hover.png
 ```
-* In your Firefox profile\chrome directory create/open UserChrome.css/UserContent.css
+* In your [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)\chrome directory create/open UserChrome.css/UserContent.css
 * Add these lines to both files:
 ```
 @import url("BlurDisabledIcons.css");
@@ -68,5 +68,3 @@ mosaic.hover.png
 @import url("UnixFix.css");
 ```
 * Copy over whichever content/*.css files you want to the chrome directory
-
-* [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)
