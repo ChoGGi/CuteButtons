@@ -41,7 +41,7 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 
 
 ### How to manually install in Firefox 57+
-* In your [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)\chrome directory create/open UserChrome.css/UserContent.css
+* In your [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)\chrome directory open UserChrome.css/UserContent.css
 * Add these lines to both files:
 ```
 @import url("BlurDisabledIcons.css");
