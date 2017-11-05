@@ -38,6 +38,8 @@ Xmarks
 LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 ```
 
+
+
 ### How to manually install in Firefox 57+
 * Rename one or more of the content/mosaic files to:
 ```
