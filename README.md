@@ -39,12 +39,14 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 ```
 
 ### How to manually install in Firefox 57+
-```
 * Rename one or more of the content/mosaic files to:
+```
 mosaic.png
 mosaic.hover.png
+```
 * In your Firefox profile\chrome directory create/open UserChrome.css/UserContent.css
 * Add these lines to both files:
+```
 @import url("BlurDisabledIcons.css");
 @import url("Icons.CheckmarkButton.css");
 @import url("Icons.CheckmarkButtonHover.css");
@@ -62,9 +64,8 @@ mosaic.hover.png
 @import url("Statusbar.css");
 @import url("Statusbar-4evar.css");
 @import url("UnixFix.css");
+```
 * Copy over whichever content/*.css files you want to the chrome directory
 
 * Firefox profile:
 https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data
-```
-
