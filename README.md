@@ -64,7 +64,7 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 ```
 (for UserChrome.css: Make sure to add these lines **above** the @namespace line)
 
-* Extract the extension XPI as a ZIP file, or check Profile\extensions\CuteButtonsCrystalSVG@ChoGGi
+* Click on Clone or download, then click Download ZIP, and extract somewhere
 * Copy over whichever content/*.css files you want to the chrome directory
 * Rename one of the content/mosaic files to:
 ```
