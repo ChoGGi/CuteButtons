@@ -1,4 +1,6 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+/* Removes all icons from menus */
+
 menu[disabled="true"]:not(.menu-iconic)>.menu-right>.menu-iconic-icon,
 menu:not(.menu-iconic)>.menu-iconic-left>.menu-iconic-icon,
 /*

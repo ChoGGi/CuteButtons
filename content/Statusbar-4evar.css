@@ -1,4 +1,6 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+/* Add statusbar icons to Status-4-Evar extension */
+
 @-moz-document url-prefix("chrome://browser/content/browser.xul"),url-prefix("chrome://navigator/content/navigator.xul"),url-prefix("chrome://messenger/content/mailWindowOverlay.xul"){
 #status4evar-status-image[label]{list-style-image:url("mosaic.hover.png")!important;-moz-image-region:rect(160px 32px 176px 16px)!important;margin:2px!important}
 #status4evar-status-image[label=""]{-moz-image-region:rect(0 16px 16px 0)!important}

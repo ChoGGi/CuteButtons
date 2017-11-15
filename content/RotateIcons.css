@@ -1,5 +1,6 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
-/*rotate icons on hover*/
+/* Rotate icons on hover */
+
 .tab-icon-image:hover,awcanvas:hover>image,image.search-go-button:hover,dropmarker:hover>image,#urlbar-icons>image:hover,#urlbarext-icons>image:hover,#page-proxy-stack:hover>image,#xpinstallheader:hover>image,installitem:hover>hbox>.xpinstallIconContainer>.xpinstallItemIcon,treecol:hover>.treecol-icon,richlistitem:hover>hbox>.addon-icon>.addonIconStack>.addonIcon,statusbarpanel>[class="fs-toolbutton"]:hover,statusbarpanel:hover>hbox>image,statusbarpanel:hover>image:not(.fs-toolbutton),tab:hover>*>image,tab:hover>image,checkbox:hover>.checkbox-check,radio:hover>image,radio:hover>*>image,menuitem:hover>hbox>.menu-iconic-icon,menu:hover>image.menubar-left,menu:hover>hbox>.menu-iconic-icon,toolbarbutton:not([id^="fx-home-button"]):hover>image,hbox[id*="Button"]:not(#BottomAreaButtons):hover>.button-box>.button-icon,button:hover>.button-box>.button-icon
 {transform:rotate(20deg)!important;-moz-transform:rotate(20deg)!important}
 /*rotate icons on active (clicked)*/

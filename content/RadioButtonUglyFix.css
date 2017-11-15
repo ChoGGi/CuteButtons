@@ -2,6 +2,6 @@
 /*Ugly workaround for a long standing bug?
 If you apply a rule with a list-style-image to certain elements, and change the -moz-appearance.
 it will stay there even if you set list-style-image to "none"
-this toggles -moz-appearance for the image
+this is used to toggle -moz-appearance for the image
 */
 .radio-check{-moz-appearance:none!important}

@@ -1,4 +1,6 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+/* Add statusbar icons to old-fox (before mozilla ripped out statusbar) */
+
 /*
 change how the statusbar looks
 change the default in the line below @namespace

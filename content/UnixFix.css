@@ -1,5 +1,6 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
-/*fix drop markers having extra icon under *BSD/Linux*/
+/* Fix drop markers having extra icon under *BSD/Linux */
+
 button[type="menu-button"]>.button-menubutton-dropmarker,
 button[type="menu"]>.button-box>.button-menu-dropmarker{list-style-image:none!important}
 .menu-iconic-left{visibility:visible!important}
