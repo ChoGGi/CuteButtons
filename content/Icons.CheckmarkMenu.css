@@ -40,13 +40,13 @@ menuitem[checked]:not([type="radio"]):not([fsetype])>.menu-iconic-left>.menu-ico
 .subviewbutton[type="checkbox"],
 menuitem[type="checkbox"],
 menuitem[checked="false"]:not([type="radio"])
-{-moz-image-region:rect(160px 48px 176px 32px)!important;list-style-image:url("file:///R:/Palemoon/mosaicicons/mosaic.png")!important}
+{-moz-image-region:rect(160px 48px 176px 32px)!important;list-style-image:url("mosaic.png")!important}
 
 /*uncheckedmark disabled*/
 .subviewbutton[disabled="true"][type="checkbox"],
 menuitem[disabled="true"][type="checkbox"],
 menuitem[disabled="true"][checked="false"]:not([type="radio"])
-{-moz-image-region:rect(336px 96px 352px 80px)!important;list-style-image:url("file:///R:/Palemoon/mosaicicons/mosaic.png")!important}
+{-moz-image-region:rect(336px 96px 352px 80px)!important;list-style-image:url("mosaic.png")!important}
 
 /*checkmark*/
 #appMenuViewHistorySidebar[checked="true"],
@@ -55,10 +55,10 @@ menuitem[disabled="true"][checked="false"]:not([type="radio"])
 .subviewbutton[type="checkbox"][checked="true"],
 menuitem[type="checkbox"][checked="true"]:not(.unified-nav-current),
 menuitem[checked="true"]:not([type="radio"]):not(.unified-nav-current):not([fsetype])
-{-moz-image-region:rect(176px 160px 192px 144px)!important;list-style-image:url("file:///R:/Palemoon/mosaicicons/mosaic.png")!important}
+{-moz-image-region:rect(176px 160px 192px 144px)!important;list-style-image:url("mosaic.png")!important}
 
 /*checkmark disabled*/
 .subviewbutton[disabled="true"][type="checkbox"][checked="true"],
 menuitem[disabled="true"][type="checkbox"][checked="true"]:not(.unified-nav-current),
 menuitem[disabled="true"][checked="true"]:not([type="radio"]):not(.unified-nav-current):not([fsetype])
-{-moz-image-region:rect(368px 16px 384px 0)!important;list-style-image:url("file:///R:/Palemoon/mosaicicons/mosaic.png")!important}
+{-moz-image-region:rect(368px 16px 384px 0)!important;list-style-image:url("mosaic.png")!important}
