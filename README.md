@@ -55,11 +55,11 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 @import url("Icons.RadioButtonHover.css");
 @import url("Icons.RadioMenu.css");
 @import url("Icons.RadioMenuHover.css");
-@import url("NoIconsButtons.css");
-@import url("NoIconsMenus.css");
+@import url("NoIconsButtons.css"); /*removes all icons from buttons*/
+@import url("NoIconsMenus.css"); /*removes all icons from menus*/
 @import url("RotateIcons.css");
-@import url("Statusbar.css");
-@import url("Statusbar-4evar.css");
+@import url("Statusbar.css"); /*only needed for old-fox that had an actual statusbar*/
+@import url("Statusbar-4evar.css"); /*used with Status-4-Evar extension*/
 @import url("UnixFix.css");
 ```
 (for UserChrome.css: Make sure to add these lines **above** the @namespace line)
