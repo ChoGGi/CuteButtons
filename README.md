@@ -81,6 +81,6 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 mosaic.png
 mosaic.hover.png (if using *Hover.css)
 ```
-* and place in the chrome directory along with the CSS files
+* and place in the chrome directory along with the CSS files (filenames are case-sensitive)
 
 ##### Image with example: https://github.com/ChoGGi/CuteButtons/issues/5
