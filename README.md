@@ -52,7 +52,6 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 @import url("OSXFix.css");
 /*optional*/
 @import url("Icons.Hover.css");
-@import url("BlurDisabledIcons.css");
 @import url("Icons.CheckmarkButton.css");
 @import url("Icons.CheckmarkButtonHover.css");
 @import url("Icons.CheckmarkMenu.css");
@@ -61,6 +60,7 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 @import url("Icons.RadioButtonHover.css");
 @import url("Icons.RadioMenu.css");
 @import url("Icons.RadioMenuHover.css");
+@import url("BlurDisabledIcons.css");
 @import url("RotateIcons.css");
 /*only needed for old-fox that had an actual statusbar*/
 @import url("Statusbar.css");
