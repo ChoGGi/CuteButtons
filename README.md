@@ -44,24 +44,33 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 * In your [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)\chrome directory open UserChrome.css/UserContent.css
 * Add these lines to both files:
 ```
+/*needed*/
+@import url("Icons.Normal.css");
+/*Linux/*BSD fix*/
+@import url("UnixFix.css");
+/*macOS fix*/
+@import url("OSXFix.css");
+/*optional*/
+@import url("Icons.Hover.css");
 @import url("BlurDisabledIcons.css");
 @import url("Icons.CheckmarkButton.css");
 @import url("Icons.CheckmarkButtonHover.css");
 @import url("Icons.CheckmarkMenu.css");
 @import url("Icons.CheckmarkMenuHover.css");
-@import url("Icons.Hover.css");
-@import url("Icons.Normal.css");
 @import url("Icons.RadioButton.css");
 @import url("Icons.RadioButtonHover.css");
 @import url("Icons.RadioMenu.css");
 @import url("Icons.RadioMenuHover.css");
 @import url("RotateIcons.css");
-@import url("UnixFix.css");
+/*only needed for old-fox that had an actual statusbar*/
+@import url("Statusbar.css");
+/*used with Status-4-Evar extension*/
+@import url("Statusbar-4evar.css");
 
-@import url("Statusbar.css"); /*only needed for old-fox that had an actual statusbar*/
-@import url("Statusbar-4evar.css"); /*used with Status-4-Evar extension*/
-@import url("NoIconsButtons.css"); /*removes all icons from buttons*/
-@import url("NoIconsMenus.css"); /*removes all icons from menus*/
+/*Warning: removes all icons from buttons*/
+@import url("NoIconsButtons.css");
+/*Warning: removes all icons from menus*/
+@import url("NoIconsMenus.css");
 ```
 (for UserChrome.css: Make sure to add these lines **above** the @namespace line)
 
