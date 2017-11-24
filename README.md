@@ -64,17 +64,19 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 
 /*blur disabled menuitems*/
 @import url("BlurDisabledIcons.css");
+
 /*rotate icons on mouseover/click*/
 @import url("RotateIcons.css");
 ```
 ###### Statusbar icons:
 ```
-/*only needed for old-fox that had an actual statusbar*/
-@import url("Statusbar.css");
 /*used with Status-4-Evar extension*/
 @import url("Statusbar-4evar.css");
+
+/*only needed for decrepit-fox that had an actual statusbar*/
+@import url("Statusbar.css");
 ```
-###### Fixes for Other OSes (Linux/*BSD/macOS):
+###### Fixes for other OSes (Linux/*BSD/macOS):
 ```
 /*Linux/*BSD fix (skip if using different OS)*/
 @import url("UnixFix.css");
