@@ -73,7 +73,8 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 ```
 
 ###### If you want to hide icons on buttons or menus, then add **one** of the below:
-```/*Warning: removes all icons from buttons*/
+```
+/*Warning: removes all icons from buttons*/
 @import url("NoIconsButtons.css");
 /*Warning: removes all icons from menus*/
 @import url("NoIconsMenus.css");
