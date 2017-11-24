@@ -47,7 +47,7 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 ```
 @import url("Icons.Normal.css");
 ```
-###### Optional:
+###### Optional (see each file for a description):
 ```
 /*checkmarks/radios*/
 @import url("Icons.CheckmarkButton.css");
@@ -79,7 +79,7 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 /*macOS fix (skip if using different OS)*/
 @import url("OSXFix.css");
 ```
-###### If you want to hide icons on buttons or menus, then add **one** of the below:
+###### If you want to hide icons on buttons or menus, then add _one_ of the below:
 ```
 /*removes all icons from buttons*/
 @import url("NoIconsButtons.css");
