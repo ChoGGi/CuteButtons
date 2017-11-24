@@ -55,7 +55,7 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 @import url("Icons.RadioButton.css");
 @import url("Icons.RadioMenu.css");
 
-/*change icons on mouse over*/
+/*change icon style on mouse over*/
 @import url("Icons.Hover.css");
 @import url("Icons.CheckmarkButtonHover.css");
 @import url("Icons.CheckmarkMenuHover.css");
@@ -66,7 +66,9 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 @import url("BlurDisabledIcons.css");
 /*rotate icons on mouseover/click*/
 @import url("RotateIcons.css");
-
+```
+###### Statusbar icons:
+```
 /*only needed for old-fox that had an actual statusbar*/
 @import url("Statusbar.css");
 /*used with Status-4-Evar extension*/
