@@ -43,7 +43,7 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 ### How to manually install in Firefox 57+
 * Navigate to your [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)\chrome folder
 * Open UserChrome.css/UserContent.css in your preferred editor (if they don't exist see [here](http://kb.mozillazine.org/index.php?title=UserChrome.css))
-* Add these lines to both files:
+* Add these lines to the top of both files:
 ```
 /*needed for icons*/
 @import url("Icons.Normal.css");
