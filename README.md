@@ -44,23 +44,26 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 * In your [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)\chrome directory open UserChrome.css/UserContent.css
 * Add these lines to both files:
 ```
-/*needed*/
+/*needed for icons*/
 @import url("Icons.Normal.css");
-/*Linux/*BSD fix*/
+/*Linux/*BSD fix (skip if using different OS)*/
 @import url("UnixFix.css");
-/*macOS fix*/
+/*macOS fix (skip if using different OS)*/
 @import url("OSXFix.css");
-/*optional*/
-@import url("Icons.Hover.css");
+/*checkmarks/radios*/
 @import url("Icons.CheckmarkButton.css");
-@import url("Icons.CheckmarkButtonHover.css");
 @import url("Icons.CheckmarkMenu.css");
-@import url("Icons.CheckmarkMenuHover.css");
 @import url("Icons.RadioButton.css");
-@import url("Icons.RadioButtonHover.css");
 @import url("Icons.RadioMenu.css");
+/*change icons on mouse over*/
+@import url("Icons.Hover.css");
+@import url("Icons.CheckmarkButtonHover.css");
+@import url("Icons.CheckmarkMenuHover.css");
+@import url("Icons.RadioButtonHover.css");
 @import url("Icons.RadioMenuHover.css");
+/*blur disabled menuitems*/
 @import url("BlurDisabledIcons.css");
+/*rotate icons on mouseover/click*/
 @import url("RotateIcons.css");
 /*only needed for old-fox that had an actual statusbar*/
 @import url("Statusbar.css");
