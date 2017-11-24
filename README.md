@@ -71,12 +71,11 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 /*used with Status-4-Evar extension*/
 @import url("Statusbar-4evar.css");
 ```
-
 ###### If you want to hide icons on buttons or menus, then add **one** of the below:
 ```
-/*Warning: removes all icons from buttons*/
+/*removes all icons from buttons*/
 @import url("NoIconsButtons.css");
-/*Warning: removes all icons from menus*/
+/*removes all icons from menus*/
 @import url("NoIconsMenus.css");
 ```
 (for UserChrome.css: Make sure to add these lines **above** the @namespace line)
