@@ -47,7 +47,7 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 ```
 @import url("Icons.Normal.css");
 ```
-###### Optional (see each file for a description):
+###### Optional (open each css file for a description):
 ```
 /*checkmarks/radios*/
 @import url("Icons.CheckmarkButton.css");
