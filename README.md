@@ -43,33 +43,41 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 ### How to manually install in Firefox 57+
 * Navigate to your [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)\chrome folder
 * Open UserChrome.css/UserContent.css in your preferred editor (if they don't exist see [here](http://kb.mozillazine.org/index.php?title=UserChrome.css))
-* Add these lines to the top of both files:
+* Add this line to the top of both files:
 ```
-/*needed for icons*/
 @import url("Icons.Normal.css");
-/*Linux/*BSD fix (skip if using different OS)*/
-@import url("UnixFix.css");
-/*macOS fix (skip if using different OS)*/
-@import url("OSXFix.css");
+```
+###### Optional:
+```
 /*checkmarks/radios*/
 @import url("Icons.CheckmarkButton.css");
 @import url("Icons.CheckmarkMenu.css");
 @import url("Icons.RadioButton.css");
 @import url("Icons.RadioMenu.css");
+
 /*change icons on mouse over*/
 @import url("Icons.Hover.css");
 @import url("Icons.CheckmarkButtonHover.css");
 @import url("Icons.CheckmarkMenuHover.css");
 @import url("Icons.RadioButtonHover.css");
 @import url("Icons.RadioMenuHover.css");
+
 /*blur disabled menuitems*/
 @import url("BlurDisabledIcons.css");
 /*rotate icons on mouseover/click*/
 @import url("RotateIcons.css");
+
 /*only needed for old-fox that had an actual statusbar*/
 @import url("Statusbar.css");
 /*used with Status-4-Evar extension*/
 @import url("Statusbar-4evar.css");
+```
+###### Fixes for Other OSes (Linux/*BSD/macOS):
+```
+/*Linux/*BSD fix (skip if using different OS)*/
+@import url("UnixFix.css");
+/*macOS fix (skip if using different OS)*/
+@import url("OSXFix.css");
 ```
 ###### If you want to hide icons on buttons or menus, then add **one** of the below:
 ```
