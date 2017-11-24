@@ -41,7 +41,8 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 
 
 ### How to manually install in Firefox 57+
-* In your [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)\chrome directory open UserChrome.css/UserContent.css
+* Navigate to your [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)\chrome folder
+* Open UserChrome.css/UserContent.css in your preferred editor
 * Add these lines to both files:
 ```
 /*needed for icons*/
@@ -77,13 +78,13 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 ```
 (for UserChrome.css: Make sure to add these lines **above** the @namespace line)
 
-* Click on Clone or download, then click Download ZIP, and extract somewhere
-* Copy over whichever content/*.css files you want to the chrome directory
-* Rename one of the content/mosaic files to:
+* Click on the Github Clone or download button above, then click Download ZIP, and extract it somewhere
+* Copy over whichever content/*.css files you want to the chrome folder
+* Rename one of the content/mosaic*.png files to:
 ```
 mosaic.png
 mosaic.hover.png (if using *Hover.css)
 ```
-* and place in the chrome directory along with the CSS files (PNG filenames are case-sensitive)
+* and place in the chrome folder along with the CSS files (PNG filenames are case-sensitive)
 
 ##### Image with example: https://github.com/ChoGGi/CuteButtons/issues/5
