@@ -39,8 +39,6 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 ```
 
 
-#### Install dev version of Firefox and set extensions.legacy.enabled to true to install CB, or:
-
 ### How to manually install in Firefox 57+
 
 * Navigate to your [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)\chrome folder
