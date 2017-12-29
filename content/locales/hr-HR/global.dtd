@@ -1,0 +1,22 @@
+<!ENTITY Options "Mogućnosti">
+<!ENTITY Enable "Omogućiti">
+<!ENTITY Disable "Onemogući">
+<!ENTITY BlurDisabled "pomutiti invaliditetom Stavke izbornika">
+<!ENTITY Rotate "Rotirati">
+<!ENTITY StatusBar "Dodatak šipka Ikone">
+<!ENTITY Icons "Ikone">
+<!ENTITY Mosaic "Ikona Stila">
+<!ENTITY MosaicTip "Promjena stila ikona">
+<!ENTITY Brighter "Svjetlije">
+<!ENTITY Gray "Siva">
+<!ENTITY Menu "Jelovnik">
+<!ENTITY Button "Dugme">
+<!ENTITY Radio "Radio">
+<!ENTITY Checkbox "Okvir">
+<!ENTITY CuteButtons "SlatkaTipke">
+<!ENTITY Faded "Izblijedio">
+<!ENTITY Hover "Lebdjeti">
+<!ENTITY Default "Zadano">
+<!ENTITY Normal "Normalan">
+<!ENTITY Toolbar "Alatna traka">
+<!-- Croatian -->

@@ -1,0 +1,22 @@
+<!ENTITY Options "Опције">
+<!ENTITY Enable "Укључи">
+<!ENTITY Disable "Искључи">
+<!ENTITY BlurDisabled "Замагли онемогућене иконе">
+<!ENTITY Rotate "Ротација">
+<!ENTITY StatusBar "Иконе на статусној траци">
+<!ENTITY Icons "Иконе">
+<!ENTITY Mosaic "икона Стил">
+<!ENTITY MosaicTip "Промена стил икона">
+<!ENTITY Brighter "Светлије">
+<!ENTITY Gray "Сива">
+<!ENTITY Menu "Мени">
+<!ENTITY Button "Дугме">
+<!ENTITY Radio "радио">
+<!ENTITY Checkbox "Polje za potvrdu">
+<!ENTITY CuteButtons "Цутедугмад">
+<!ENTITY Faded "избледео">
+<!ENTITY Hover "Лебдети">
+<!ENTITY Default "Уобичајено">
+<!ENTITY Normal "нормалан">
+<!ENTITY Toolbar "тоолбар">
+<!-- Serbian -->

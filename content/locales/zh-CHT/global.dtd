@@ -1,0 +1,22 @@
+<!ENTITY Options "選項">
+<!ENTITY Enable "啟用">
+<!ENTITY Disable "禁用">
+<!ENTITY BlurDisabled "模糊禁用菜單項">
+<!ENTITY Rotate "旋轉">
+<!ENTITY StatusBar "附加欄圖標">
+<!ENTITY Icons "圖標">
+<!ENTITY Mosaic "圖標樣式">
+<!ENTITY MosaicTip "改變圖標的風格">
+<!ENTITY Brighter "更亮">
+<!ENTITY Gray "灰色">
+<!ENTITY Menu "菜單">
+<!ENTITY Button "按鈕">
+<!ENTITY Radio "無線電">
+<!ENTITY Checkbox "複選框">
+<!ENTITY CuteButtons "可愛的按鈕">
+<!ENTITY Faded "褪色">
+<!ENTITY Hover "徘徊">
+<!ENTITY Default "默認">
+<!ENTITY Normal "正常">
+<!ENTITY Toolbar "工具欄">
+<!-- Chinese (Traditional) -->

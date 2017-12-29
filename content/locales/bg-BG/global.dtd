@@ -1,0 +1,22 @@
+<!ENTITY Options "Опции">
+<!ENTITY Enable "Разрешаване">
+<!ENTITY Disable "правя неспособен">
+<!ENTITY BlurDisabled "Увреждания Blur Елементи на менюто">
+<!ENTITY Rotate "въртя">
+<!ENTITY StatusBar "Допълващо Бар Икони">
+<!ENTITY Icons "Икони">
+<!ENTITY Mosaic "Икона стил">
+<!ENTITY MosaicTip "Промяна на стила на икони">
+<!ENTITY Brighter "по-светъл">
+<!ENTITY Gray "сив">
+<!ENTITY Menu "меню">
+<!ENTITY Button "бутон">
+<!ENTITY Radio "радио">
+<!ENTITY Checkbox "квадратчето">
+<!ENTITY CuteButtons "СладъкКопчета">
+<!ENTITY Faded "избелял">
+<!ENTITY Hover "кръжа">
+<!ENTITY Default "По подразбиране">
+<!ENTITY Normal "нормален">
+<!ENTITY Toolbar "Toolbar">
+<!-- Bulgarian -->

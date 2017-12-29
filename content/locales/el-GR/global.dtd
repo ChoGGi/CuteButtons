@@ -1,0 +1,22 @@
+<!ENTITY Options "επιλογές">
+<!ENTITY Enable "Ενεργοποίηση">
+<!ENTITY Disable "Απενεργοποίηση">
+<!ENTITY BlurDisabled "Είδη Απενεργοποίηση του μενού Blur">
+<!ENTITY Rotate "Γυρίζω">
+<!ENTITY StatusBar "Add-on Εικόνες Μπαρ">
+<!ENTITY Icons "Εικόνες">
+<!ENTITY Mosaic "Εικόνες προσαγορεύω">
+<!ENTITY MosaicTip "Αλλαγή στυλ Εικόνες">
+<!ENTITY Brighter "φωτεινό">
+<!ENTITY Gray "Γκρί">
+<!ENTITY Menu "μενού">
+<!ENTITY Button "κουμπί">
+<!ENTITY Radio "Ραδιόφωνο">
+<!ENTITY Checkbox "Πλαίσιο ελέγχου">
+<!ENTITY CuteButtons "χαριτωμένοΚουμπιά">
+<!ENTITY Faded "Ξεθωριασμένος">
+<!ENTITY Hover "Φτερουγίζω">
+<!ENTITY Default "Αθέτηση">
+<!ENTITY Normal "Κανονικός">
+<!ENTITY Toolbar "Toolbar">
+<!-- Greek -->

@@ -175,7 +175,7 @@ var cbOptions = {
 
     //see above
     cbCommon.getMainWindow().setTimeout(function() {
-      if (typeof cbOverlay === "undefined")//needed for TB 8.0
+      if (typeof (cbOverlay) === "undefined")//needed for TB 8.0
         Cu.import("chrome://cutebuttons/content/overlay.jsm");
       cbOverlay.loadCSS();
     },100);

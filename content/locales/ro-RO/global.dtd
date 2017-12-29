@@ -1,0 +1,22 @@
+<!ENTITY Options "Opțiuni">
+<!ENTITY Enable "Permite">
+<!ENTITY Disable "Dezactivați">
+<!ENTITY BlurDisabled "Estompa cu handicap meniu Articole">
+<!ENTITY Rotate "Roti">
+<!ENTITY StatusBar "Add-on Bar Icoane">
+<!ENTITY Icons "Icoane">
+<!ENTITY Mosaic "Icoană Stil">
+<!ENTITY MosaicTip "Schimbarea stilului de icoane">
+<!ENTITY Brighter "Luminos">
+<!ENTITY Gray "Gri">
+<!ENTITY Menu "Meniu">
+<!ENTITY Button "Buton">
+<!ENTITY Radio "Radio">
+<!ENTITY Checkbox "Caseta de bifat">
+<!ENTITY CuteButtons "DrăguţButoane">
+<!ENTITY Faded "Decolorat">
+<!ENTITY Hover "Planare">
+<!ENTITY Default "Mod implicit">
+<!ENTITY Normal "Normal">
+<!ENTITY Toolbar "Bara de instrumente">
+<!-- Romanian -->

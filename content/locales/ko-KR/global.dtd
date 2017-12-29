@@ -1,0 +1,22 @@
+<!ENTITY Options "옵션">
+<!ENTITY Enable "사용">
+<!ENTITY Disable "해제">
+<!ENTITY BlurDisabled "블러 장애인 메뉴 항목">
+<!ENTITY Rotate "회전">
+<!ENTITY StatusBar "부가 기능 표시 줄 아이콘">
+<!ENTITY Icons "아이콘">
+<!ENTITY Mosaic "아이콘 스타일">
+<!ENTITY MosaicTip "아이콘의 변경 스타일">
+<!ENTITY Brighter "밝은">
+<!ENTITY Gray "회색">
+<!ENTITY Menu "메뉴">
+<!ENTITY Button "단추">
+<!ENTITY Radio "라디오">
+<!ENTITY Checkbox "확인란">
+<!ENTITY CuteButtons "귀여운 버튼">
+<!ENTITY Faded "시든">
+<!ENTITY Hover "호버">
+<!ENTITY Default "태만">
+<!ENTITY Normal "표준">
+<!ENTITY Toolbar "툴바">
+<!-- Korean -->

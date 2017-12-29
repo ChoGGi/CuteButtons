@@ -1,0 +1,24 @@
+<!ENTITY Options "Einstellungen">
+<!ENTITY Enable "Ja">
+<!ENTITY Disable "Nein">
+<!ENTITY BlurDisabled "Deaktivierte Symbole verwischen">
+<!ENTITY Rotate "Drehende">
+<!ENTITY StatusBar "Statusleisten Symbole">
+<!ENTITY Icons "Symbole">
+<!ENTITY Mosaic "Symbole Stil verändern">
+<!ENTITY MosaicTip "Stil ändern von Symbole">
+<!ENTITY Brighter "Heller">
+<!ENTITY Gray "Grau">
+<!ENTITY Menu "Menü">
+<!ENTITY Button "Button">
+<!ENTITY Radio "Radio">
+<!ENTITY Checkbox "Auswahlbox">
+<!ENTITY CuteButtons "CuteButtons">
+<!ENTITY Faded "Blass">
+<!ENTITY Hover "Überfahren">
+<!ENTITY Default "Standard">
+<!ENTITY Normal "Normal">
+<!ENTITY Toolbar "Symbolleiste">
+<!-- German -->
+
+<!ENTITY RotateIcons "Drehende Symbole">

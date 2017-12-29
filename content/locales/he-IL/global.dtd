@@ -1,0 +1,22 @@
+<!ENTITY Options "אפשרויות">
+<!ENTITY Enable "אפשור">
+<!ENTITY Disable "נטרול">
+<!ENTITY BlurDisabled "טשטוש אייקונים מנוטרלים">
+<!ENTITY Rotate "לְסוֹבֵב">
+<!ENTITY StatusBar "אייקוני שורת מצב">
+<!ENTITY Icons "אייקונים">
+<!ENTITY Mosaic "סגנון אייקון">
+<!ENTITY MosaicTip "סגנון שינוי של סמלים">
+<!ENTITY Brighter "בהיר יותר">
+<!ENTITY Gray "אָפוֹר">
+<!ENTITY Menu "תפריט">
+<!ENTITY Button "כפתור">
+<!ENTITY Radio "רָדִיוֹ">
+<!ENTITY Checkbox "תיבת סימון">
+<!ENTITY CuteButtons "כפתורים חמודים">
+<!ENTITY Faded "דהה">
+<!ENTITY Hover "לְרַחֵף">
+<!ENTITY Default "בְּרִירַת מֶחדָל">
+<!ENTITY Normal "דהייה)">
+<!ENTITY Toolbar "סרגל כלים">
+<!-- Hebrew -->

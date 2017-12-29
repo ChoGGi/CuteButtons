@@ -1,0 +1,22 @@
+<!ENTITY Options "Možnosti">
+<!ENTITY Enable "Povolit">
+<!ENTITY Disable "Zakázat">
+<!ENTITY BlurDisabled "Rozmazat zakázané ikony">
+<!ENTITY Rotate "Střídat">
+<!ENTITY StatusBar "Ikony stavového řádku">
+<!ENTITY Icons "Ikony">
+<!ENTITY Mosaic "Ikona Styl">
+<!ENTITY MosaicTip "Změnit styl ikon">
+<!ENTITY Brighter "Jasnější">
+<!ENTITY Gray "Šedá">
+<!ENTITY Menu "Nabídka">
+<!ENTITY Button "Tlačítko">
+<!ENTITY Radio "Rádio">
+<!ENTITY Checkbox "Zaškrtávací Políčko">
+<!ENTITY CuteButtons "RoztomilýTlačítka">
+<!ENTITY Faded "Vybledlý">
+<!ENTITY Hover "Vznášet se">
+<!ENTITY Default "Standardní">
+<!ENTITY Normal "Normální">
+<!ENTITY Toolbar "Panel nástrojů">
+<!-- Czech -->

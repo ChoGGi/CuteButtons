@@ -1,0 +1,22 @@
+<!ENTITY Options "Опции">
+<!ENTITY Enable "Включить">
+<!ENTITY Disable "Отключить">
+<!ENTITY BlurDisabled "Размытие инвалидов Пункты меню">
+<!ENTITY Rotate "Поворот">
+<!ENTITY StatusBar "Добавить-на полоса Иконки">
+<!ENTITY Icons "Иконки">
+<!ENTITY Mosaic "Иконка Стиль">
+<!ENTITY MosaicTip "Изменить стиль иконок">
+<!ENTITY Brighter "Ярче">
+<!ENTITY Gray "Серый">
+<!ENTITY Menu "Меню">
+<!ENTITY Button "кнопка">
+<!ENTITY Radio "Радио">
+<!ENTITY Checkbox "флажок">
+<!ENTITY CuteButtons "СимпатичныеКнопки">
+<!ENTITY Faded "Увядшие">
+<!ENTITY Hover "зависать">
+<!ENTITY Default "По умолчанию">
+<!ENTITY Normal "Нормальный">
+<!ENTITY Toolbar "Панель инструментов">
+<!-- Russian -->

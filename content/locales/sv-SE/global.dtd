@@ -1,0 +1,22 @@
+<!ENTITY Options "Inställningar">
+<!ENTITY Enable "Aktivera">
+<!ENTITY Disable "Inaktivera">
+<!ENTITY BlurDisabled "Gör inaktiva ikoner suddiga">
+<!ENTITY Rotate "Rotera">
+<!ENTITY StatusBar "Statusfältsikoner">
+<!ENTITY Icons "Ikoner">
+<!ENTITY Mosaic "Stilikon">
+<!ENTITY MosaicTip "Ändra stil ikoner">
+<!ENTITY Brighter "Ljusare">
+<!ENTITY Gray "Gråskala">
+<!ENTITY Menu "Meny">
+<!ENTITY Button "Knapp">
+<!ENTITY Radio "Radio">
+<!ENTITY Checkbox "Kryssruta">
+<!ENTITY CuteButtons "SötKnappar">
+<!ENTITY Faded "Urblekt">
+<!ENTITY Hover "Sväva">
+<!ENTITY Default "Standard">
+<!ENTITY Normal "Vanligt">
+<!ENTITY Toolbar "Toolbar">
+<!-- Swedish -->

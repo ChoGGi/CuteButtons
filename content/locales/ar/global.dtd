@@ -1,0 +1,22 @@
+<!ENTITY Options "خيارات">
+<!ENTITY Enable "تمكين">
+<!ENTITY Disable "تعطيل">
+<!ENTITY BlurDisabled "طمس المعاقين عناصر قائمة">
+<!ENTITY Rotate "تناوب">
+<!ENTITY StatusBar "إضافة على شريط الأيقونات">
+<!ENTITY Icons "الرموز">
+<!ENTITY Mosaic "رمز نمط">
+<!ENTITY MosaicTip "تغيير نمط من الأيقونات">
+<!ENTITY Brighter "أكثر إشراقا">
+<!ENTITY Gray "رمادي">
+<!ENTITY Menu "قائمة الطعام">
+<!ENTITY Button "زر">
+<!ENTITY Radio "راديو">
+<!ENTITY Checkbox "مربع">
+<!ENTITY CuteButtons "أزرار لطيف">
+<!ENTITY Faded "تلاشى">
+<!ENTITY Hover "يحوم">
+<!ENTITY Default "افتراضي">
+<!ENTITY Normal "تخبو)">
+<!ENTITY Toolbar "شريط الأدوات">
+<!-- Arabic -->

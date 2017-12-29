@@ -1,0 +1,22 @@
+<!ENTITY Options "Vaihtoehdot">
+<!ENTITY Enable "Mahdollistaa">
+<!ENTITY Disable "Vaurioittaa">
+<!ENTITY BlurDisabled "Sumeus Vammaiset Valikkokohtien">
+<!ENTITY Rotate "Kiertää">
+<!ENTITY StatusBar "Lisäosan Baari Kuvakkeet">
+<!ENTITY Icons "Kuvakkeet">
+<!ENTITY Mosaic "Ikoni Tyyli">
+<!ENTITY MosaicTip "Muutos tyyli kuvakkeet">
+<!ENTITY Brighter "Kirkkaampi">
+<!ENTITY Gray "Harmaa">
+<!ENTITY Menu "Valikko">
+<!ENTITY Button "Nappi">
+<!ENTITY Radio "Radio">
+<!ENTITY Checkbox "Valintaruutu">
+<!ENTITY CuteButtons "SöpöPainikkeet">
+<!ENTITY Faded "Haalistua">
+<!ENTITY Hover "Leijua">
+<!ENTITY Default "Oletusarvo">
+<!ENTITY Normal "Normaali">
+<!ENTITY Toolbar "Toolbar">
+<!-- Finnish -->
