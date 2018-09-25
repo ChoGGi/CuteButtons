@@ -92,6 +92,8 @@ LouCypher's inspectWindow.uc.js/inspectChrome.uc.js
 ```
 (for UserChrome.css: Make sure to add these lines **above** the @namespace line)
 
+##### How to download from github:
+
 * Click on the Github Clone or download button above, then click Download ZIP, and extract it somewhere
 * Copy over whichever content/*.css files you want to the chrome folder
 * Rename one of the content/mosaic*.png files to:
@@ -101,4 +103,4 @@ mosaic.hover.png (if using *Hover.css)
 ```
 * and place in the chrome folder along with the CSS files (PNG filenames are case-sensitive)
 
-##### Image with example: https://github.com/ChoGGi/CuteButtons/issues/5
+##### Image with example: https://github.com/ChoGGi/CuteButtons/issues/5#issuecomment-344378091
