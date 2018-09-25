@@ -57,12 +57,12 @@ radio[disabled="true"]>.radio-check-box1>.radio-check-box2
 
 /*Tree icons*/
 @-moz-document url-prefix(chrome://inspector){
-    /*so it doesn't cut off the icons for tree twistys*/
-    treechildren:-moz-tree-twisty{width:auto!important;height:auto!important}
+	/*so it doesn't cut off the icons for tree twistys*/
+	treechildren:-moz-tree-twisty{width:auto!important;height:auto!important}
 
-    treechildren:-moz-tree-twisty
-    {-moz-image-region:rect(336px 128px 352px 112px)!important;list-style-image:url("mosaic.png")!important}
-    treechildren:-moz-tree-twisty(open)
-    {-moz-image-region:rect(304px 64px 320px 48px)!important}
-    /*#trDOMTree */
+	treechildren:-moz-tree-twisty
+	{-moz-image-region:rect(336px 128px 352px 112px)!important;list-style-image:url("mosaic.png")!important}
+	treechildren:-moz-tree-twisty(open)
+	{-moz-image-region:rect(304px 64px 320px 48px)!important}
+	/*#trDOMTree */
 }

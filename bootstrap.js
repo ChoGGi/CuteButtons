@@ -9,8 +9,8 @@ Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 //test if this is still needed on older versions, or if flushBundles is fine
 //name.properties?' + Math.random()),
 let stringBundle = Services.strings.createBundle(
-                    'chrome://cutebuttons/locale/name.properties'),
-aReasonWindow = null;
+                    'chrome://cutebuttons/locale/name.properties');
+let aReasonWindow = null;
 
   function startup(aData, aReason)
   {

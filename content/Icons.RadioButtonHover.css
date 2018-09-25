@@ -29,9 +29,9 @@ radio[disabled="true"]:hover>.radio-check-box1>.radio-check-box2
 
 /*Tree icons*/
 @-moz-document url-prefix(chrome://inspector){
-    treechildren:-moz-tree-twisty(hover)
-    {-moz-image-region:rect(336px 128px 352px 112px)!important;list-style-image:url("mosaic.hover.png")!important}
-    treechildren:-moz-tree-twisty(open,hover)
-    {-moz-image-region:rect(304px 64px 320px 48px)!important}
-    /*#trDOMTree */
+	treechildren:-moz-tree-twisty(hover)
+	{-moz-image-region:rect(336px 128px 352px 112px)!important;list-style-image:url("mosaic.hover.png")!important}
+	treechildren:-moz-tree-twisty(open,hover)
+	{-moz-image-region:rect(304px 64px 320px 48px)!important}
+	/*#trDOMTree */
 }

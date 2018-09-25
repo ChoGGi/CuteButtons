@@ -4,7 +4,7 @@
 /*uncheckedmark*/
 treechildren:-moz-tree-checkbox(hover),
 toolbarbutton.findbar-button[type="checkbox"]:hover:not([checked="true"]),
-listitem[type="checkbox"]:not([checked="true"]):hover>listcell>.listcell-check,
+listitem[type="checkbox"]:hover>listcell:not([checked="true"])>.listcell-check,
 checkbox:hover:not([checked="true"]):not([preference="sf-leftsidestar"])>.checkbox-spacer-box>.checkbox-check,
 checkbox:hover:not([checked="true"]):not([preference="sf-leftsidestar"])>.checkbox-spacer-box,
 checkbox:hover:not([preference="sf-leftsidestar"])>.checkbox-spacer-box>.checkbox-check,
@@ -13,7 +13,7 @@ checkbox:hover:not([preference="sf-leftsidestar"])>.checkbox-check
 
 /*uncheckedmark disabled*/
 toolbarbutton.findbar-button[disabled="true"][type="checkbox"]:hover:not([checked="true"]),
-listitem[disabled="true"][type="checkbox"]:not([checked="true"]):hover>listcell>.listcell-check,
+listitem[type="checkbox"][disabled="true"]:hover>listcell:not([checked="true"])>.listcell-check,
 checkbox[disabled="true"]:hover:not([checked="true"]):not([preference="sf-leftsidestar"])>.checkbox-spacer-box>.checkbox-check,
 checkbox[disabled="true"]:hover:not([checked="true"]):not([preference="sf-leftsidestar"])>.checkbox-spacer-box,
 checkbox[disabled="true"]:hover:not([preference="sf-leftsidestar"])>.checkbox-spacer-box>.checkbox-check,
@@ -23,22 +23,23 @@ checkbox[disabled="true"]:hover:not([preference="sf-leftsidestar"])>.checkbox-ch
 /*checkmark*/
 treechildren:-moz-tree-checkbox(checked,hover),
 toolbarbutton.findbar-button[type="checkbox"][checked="true"]:hover,
-listitem[type="checkbox"][checked="true"]:hover>listcell>.listcell-check,
+listitem[type="checkbox"]:hover>listcell[checked="true"]>.listcell-check,
 checkbox[checked="true"]:hover:not([preference="sf-leftsidestar"])>.checkbox-spacer-box>.checkbox-check,
 checkbox[checked="true"]:hover:not([preference="sf-leftsidestar"])>.checkbox-check
 {-moz-image-region:rect(176px 160px 192px 144px)!important;list-style-image:url("mosaic.hover.png")!important}
 
 /*checkmark disabled*/
 toolbarbutton.findbar-button[disabled="true"][type="checkbox"][checked="true"]:hover,
-listitem[disabled="true"][type="checkbox"][checked="true"]:hover>listcell>.listcell-check,
+listitem[type="checkbox"][disabled="true"]:hover>listcell[checked="true"]>.listcell-check,
 checkbox[disabled="true"][checked="true"]:hover:not([preference="sf-leftsidestar"])>.checkbox-spacer-box>.checkbox-check,
 checkbox[disabled="true"][checked="true"]:hover:not([preference="sf-leftsidestar"])>.checkbox-check
 {-moz-image-region:rect(368px 16px 384px 0)!important;list-style-image:url("mosaic.hover.png")!important}
 
 /*Tree icons*/
 @-moz-document url-prefix(chrome://menuedit){
-    treechildren:-moz-tree-image(visible,current)
-    {-moz-image-region:rect(176px 160px 192px 144px)!important;list-style-image:url("mosaic.hover.png")!important}
-    treechildren:-moz-tree-image(hidden,current)
-    {-moz-image-region:rect(160px 48px 176px 32px)!important;list-style-image:url("mosaic.hover.png")!important}
-    }
+	treechildren:-moz-tree-image(visible,current)
+	{-moz-image-region:rect(176px 160px 192px 144px)!important;list-style-image:url("mosaic.hover.png")!important}
+	treechildren:-moz-tree-image(hidden,current)
+	{-moz-image-region:rect(160px 48px 176px 32px)!important;list-style-image:url("mosaic.hover.png")!important}
+}
+
