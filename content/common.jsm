@@ -192,20 +192,20 @@ var cbCommon = {
       nameProfile = "mosaic.hover.png";
       pref = "mosaichoverwhich";
     }
-    let fileAddon = cbCommon.getAddonFile(nameAddon),
-    fileProfile = cbCommon.getProfileFile(nameProfile);
+    let fileAddon = cbCommon.getAddonFile(nameAddon);
+    let fileProfile = cbCommon.getProfileFile(nameProfile);
 
     if (cbCommon.prefs.getIntPref(pref) != mosaic) {
       //numbers don't match; no need to check file existence/date, just copy and call it a day (mosaic changed)
       cbCommon.copyFile(fileAddon,fileProfile,nameProfile);
       //update mosaicWhich so we aren't copying the same file all the time
       cbCommon.prefs.setIntPref(pref,mosaic);
+    } else if (fileProfile.exists() == false) {
+      //if it doesn't exist (first run, or new config and files deleted)
+      fileAddon.copyTo(cbCommon.profileDir,nameProfile);
     } else if (fileProfile.lastModifiedTime != fileAddon.lastModifiedTime) {
       //profile file time is different from addon file time (extension updated)
       cbCommon.copyFile(fileAddon,fileProfile,nameProfile);
-    } else if (fileProfile.exists() == false) {
-      //if it doesn't exist (first run)
-      fileAddon.copyTo(cbCommon.profileDir,nameProfile);
     }
   },
 
